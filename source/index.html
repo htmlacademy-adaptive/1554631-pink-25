@@ -18,17 +18,17 @@
       </div>
       <div class="navigation__menu menu">
         <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
-        <ul class="menu__list menu-items">
-          <li class="menu-items__item menu-item">
+        <ul class="menu__list">
+          <li class="menu__item">
             <a href="#">ГЛАВНАЯ</a>
           </li>
-          <li class="menu-items__item menu-item">
+          <li class="menu__item">
             <a href="#">ФОТОГРАФИИ</a>
           </li>
-          <li class="menu-items__item menu-item">
+          <li class="menu__item">
             <a href="#">КОНКУРС</a>
           </li>
-          <li class="menu-items__item menu-item">
+          <li class="menu__item">
             <a href="#">html academy</a>
           </li>
         </ul>
@@ -38,43 +38,43 @@
   <main class="site-index">
     <h1 class="visually-hidden">Сайт фото-приложения PINK. </h1>
     <section class="site-index__intro intro">
-      <div class="intro__title-wrapper">
+      <div class="intro__wrapper">
         <h2 class="intro__title title-second">Взгляните на жизнь
           иначе!</h2>
+        <button class="intro__button button" type="button">Скачать приложение</button>
+        <ul class="intro__list list-os">
+          <li class="list-os__item item-os item-os--apple">
+            <img src="" alt="Иконка ОС apple." width="" height="">
+          </li>
+          <li class="list-os__item item-os item-os--android">
+            <img src="" alt="Иконка ОС android." width="" height="">
+          </li>
+          <li class="list-os__item item-os item-os--windows">
+            <img src="" alt="Иконка ОС windows." width="" height="">
+          </li>
+        </ul>
+        <p class="intro__sign">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-      <button class="intro__button button" type="button">Скачать приложение</button>
-      <ul class="intro__list list-os">
-        <li class="list-os__item item-os item-os--apple">
-          <img src="" alt="Иконка ОС apple." width="" height="">
-        </li>
-        <li class="list-os__item item-os item-os--android">
-          <img src="" alt="Иконка ОС android." width="" height="">
-        </li>
-        <li class="list-os__item item-os item-os--windows">
-          <img src="" alt="Иконка ОС windows." width="" height="">
-        </li>
-      </ul>
-      <p class="intro__sign">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="advantages">
-      <div class="advantages-wrapper">
-        <h2 class="advantages__title title-second"> <span class="title-second__separator"> Устали от серости
-            мегаполиса?</span> <span class="title-second__separator"> Нам есть, что вам
+      <div class="advantages__wrapper">
+        <h2 class="advantages__title title-second"> <span class="title-second__separator separator"> Устали от серости
+            мегаполиса?</span> <span class="title-second__separator separator"> Нам есть, что вам
             предложить!</span>
         </h2>
         <ul class="advantages__list benefits-items">
-          <li class="benefits-items__item benefits-item">
+          <li class="benefits-items__item ">
             <h3 class="benefits-item__title">Поднимает настроение</h3>
             <p class="benefits-item__discription">Приложение позволит вам победить осеннюю хандру и депрессию буквально
               в
               несколько кликов!</p>
           </li>
-          <li class="benefits-items__item benefits-item">
+          <li class="benefits-items__item">
             <h3 class="benefits-item__title">Меняет мир вокруг</h3>
             <p class="benefits-item__discription">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
               усилить эффект</p>
           </li>
-          <li class="benefits-items__item benefits-item">
+          <li class="benefits-items__item">
             <h3 class="benefits-item__title">Заводит новых друзей</h3>
             <p class="benefits-item__discription">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
               заводите новых</p>
@@ -86,7 +86,7 @@
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
-      <div class="reviews-wrapper slider">
+      <div class="reviews__wrapper slider">
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item">
             <h3 class="reviews__title">Николай Петров</h3>
@@ -117,7 +117,7 @@
     </section>
     <section class="price">
       <h2 class="visually-hidden">Тарифы</h2>
-      <div class="price-wrapper slider">
+      <div class="price__wrapper slider">
         <ul class="price__list slider__list">
           <table class="price__table slider__table">
             <tr class="price__column slider__column  slider__column--hidden">
@@ -153,22 +153,22 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts-wrapper">
+      <div class="contacts__wrapper">
         <h2 class="contacts__title title-second">Остались вопросы?
           Свяжитесь с нами!</h2>
         <ul class="contacts__list contacts-items">
-          <li class="contacts-items__item contacts-item">
-            <h3 class="contacts-item__title">Звоните:</h3>
-            <span class="contacts-item__number number">+7 (812) 555-66-66</span>
+          <li class="contacts-items__item ">
+            <h3 class="contacts-items__title">Звоните:</h3>
+            <a class="contacts-items__number" href="" type="tell">+7 (812) 555-66-66</a>
           </li>
-          <li class="contacts-items__item contacts-item">
-            <h3 class="contacts-item__title">Пишите:</h3>
-            <span class="contacts-item__mail mail">mail@htmlacademy.ru</span>
+          <li class="contacts-items__item">
+            <h3 class="contacts-items__title">Пишите:</h3>
+            <a class="contacts-items__mail mail" href="" type="email">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts-items__item contacts-item">
-            <h3 class="contacts-item__title">Приезжайте в гости:</h3>
-            <span class="contacts-item__addres addres">ул. Большая
-              Конюшенная, 19/8</span>
+          <li class="contacts-items__item">
+            <h3 class="contacts-items__title">Приезжайте в гости:</h3>
+            <p class="contacts-items__addres">ул. Большая
+              Конюшенная, 19/8</p>
           </li>
         </ul>
         <div class="contacts__maps"></div>
@@ -176,30 +176,32 @@
     </section>
   </main>
   <footer class="site-footer">
-    <section class="site-footer__logo logo logo--glasses">
-      <h2 class="visually-hidden">Логотип приложения PINK.</h2>
-      <a class="logo__link" href="#">
+    <div class="site-footer__wrapper">
+      <section class="site-footer__logo logo logo--glasses">
+        <h2 class="visually-hidden">Логотип приложения PINK.</h2>
+        <a class="logo__link" href="#">
 
-      </a>
-    </section>
-    <section class="social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social__list social-items">
-        <li class="social-items__item social-item">
-          <a class="social-item__link" href=""><span class="visually-hidden">VK.</span></a>
-        </li>
-        <li class="social-items__item social-item">
-          <a class="social-item__link" href=""><span class="visually-hidden">Twitter.</span></a>
-        </li>
-        <li class="social-items__item social-item">
-          <a class="social-item__link" href=""><span class="visually-hidden">YouTube.</span></a>
-        </li>
-      </ul>
-    </section>
-    <section class="logo-developer">
-      <h2 class="visually-hidden">Логотип компании-разработчка</h2>
-      <span class="logo-developer__sign">Разработано</span>
-    </section>
+        </a>
+      </section>
+      <section class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list social-items">
+          <li class="social-items__item social-item">
+            <a class="social-item__link" href=""><span class="visually-hidden">VK.</span></a>
+          </li>
+          <li class="social-items__item social-item">
+            <a class="social-item__link" href=""><span class="visually-hidden">Twitter.</span></a>
+          </li>
+          <li class="social-items__item social-item">
+            <a class="social-item__link" href=""><span class="visually-hidden">YouTube.</span></a>
+          </li>
+        </ul>
+      </section>
+      <section class="logo-developer">
+        <h2 class="visually-hidden">Логотип компании-разработчка</h2>
+        <a class="logo-developer__link" href=""> <span class="logo-developer__sign">Разработано</span></a>
+      </section>
+    </div>
   </footer>
 </body>
 
