@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -11,34 +12,34 @@
   <header class="site-header">
     <nav class="site-header__navigation navigation">
       <div class="navigation__logo logo">
-        <a class="logo__link" href="#">
+        <a class="logo__link" href="form.html">
           <img class="logo__image" src="" alt="Логотип приложения PINK." width="" height="">
           <span class="visually-hidden">Логотип приложения PINK.</span>
         </a>
       </div>
       <div class="navigation__menu menu">
         <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
-        <ul class="menu__list">
+        <ul class="menu__list menu__list--close">
           <li class="menu__item">
-            <a href="#">ГЛАВНАЯ</a>
+            <a class="menu__link" href="#">ГЛАВНАЯ</a>
           </li>
           <li class="menu__item">
-            <a href="#">ФОТОГРАФИИ</a>
+            <a class="menu__link" href="#">ФОТОГРАФИИ</a>
           </li>
           <li class="menu__item">
-            <a href="#">КОНКУРС</a>
+            <a class="menu__link" href="#">КОНКУРС</a>
           </li>
           <li class="menu__item">
-            <a href="#">html academy</a>
+            <a class="menu__link" href="#">html academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="site-index">
+  <main class="site-index footer-sticky">
     <h1 class="visually-hidden">Сайт фото-приложения PINK. </h1>
     <section class="site-index__intro intro">
-      <h2 class="intro__title title-second">Взгляните на жизнь
+      <h2 class="intro__title title-second">Взгляните на жизнь</br>
         иначе!</h2>
       <button class="intro__button button" type="button">Скачать приложение</button>
       <ul class="intro__list list-os">
@@ -52,9 +53,9 @@
           <img class="list-os__icon" src="" alt="Иконка ОС windows." width="" height="">
         </li>
       </ul>
-      <p class="intro__sign">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <p class="intro__sign">Доступно для iPhone, iPad, Android,</br> Windows Phone, OS X, Windows 8</p>
     </section>
-    <section class="advantages">
+    <section class="site-index__advantages advantages">
       <h2 class="advantages__title title-second"> <span class="title-second__separator separator"> Устали от серости
           мегаполиса?</span> <span class="title-second__separator separator"> Нам есть, что вам
           предложить!</span>
@@ -77,8 +78,10 @@
             заводите новых</p>
         </li>
       </ul>
-      <img class="advantages__image" src="#" alt="Фотография мусорных баков с обработкой и тестом (Всем Привет!)."
-        width="" height="">
+      <div class="advantages__image-wrapper">
+        <img class="advantages__image" src="#" alt="Фотография мусорных баков с обработкой и тестом (Всем Привет!)."
+        width="157" height="320">
+      </div>
     </section>
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
@@ -114,32 +117,33 @@
     <section class="price">
       <h2 class="visually-hidden">Тарифы</h2>
       <div class="price__wrapper slider">
-        <ul class="price__list slider__list">
-          <table class="price__table slider__table">
+        <table class="price__table slider__table">
+          <tbody  class="price__table slider__table">
             <tr class="price__column slider__column  slider__column--hidden">
               <td class="price__cell ">Розовый фильтр</td>
               <td class="price__cell ">Смайлики</td>
               <td class="price__cell ">Комментарии</td>
             </tr>
             <tr class="price__column slider__column">
-              <th class="price__title">База 1,99 USD</th>
-              <td class="price__cell"> <span class="price__signature">Розовый фильтр</span> </td>
-              <td class="price__cell"> <span class="price__signature">Смайлики</span> </td>
-              <td class="price-cell"> <span class="price__signature">Комментарии</span> </td>
-            </tr>
-            <tr class="price__column slider__column">
-              <th class="price__title price__title--hit">СТАНДАРТ 3,99 USD </th>
+              <th class="price__title">База <span class="price__title-many">1,99 USD</span></th>
               <td class="price__cell"> <span class="price__signature">Розовый фильтр</span> </td>
               <td class="price__cell"> <span class="price__signature">Смайлики</span> </td>
               <td class="price__cell"> <span class="price__signature">Комментарии</span> </td>
             </tr>
             <tr class="price__column slider__column">
-              <th class="price__title">АНЛИМ 9,99 USD</th>
+              <th class="price__title price__title--hit">СТАНДАРТ <span class="price__title-many">3,99 USD</span> </th>
               <td class="price__cell"> <span class="price__signature">Розовый фильтр</span> </td>
               <td class="price__cell"> <span class="price__signature">Смайлики</span> </td>
               <td class="price__cell"> <span class="price__signature">Комментарии</span> </td>
             </tr>
-          </table>
+            <tr class="price__column slider__column">
+              <th class="price__title">АНЛИМ <span class="price__title-many">9,99 USD</span></th>
+              <td class="price__cell"> <span class="price__signature">Розовый фильтр</span> </td>
+              <td class="price__cell"> <span class="price__signature">Смайлики</span> </td>
+              <td class="price__cell"> <span class="price__signature">Комментарии</span> </td>
+            </tr>
+          </tbody>
+        </table>
           <div class="price__toggles slider__toggles">
             <button class="slider__toggle " type="button"><span class="visually-hidden">Выбрать 1
                 слайд.</span></button>
@@ -152,20 +156,20 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title title-second">Остались вопросы?
+      <h2 class="contacts__title title-second">Остались вопросы?</br>
         Свяжитесь с нами!</h2>
       <ul class="contacts__list contacts-items">
         <li class="contacts-items__item ">
           <h3 class="contacts-items__title">Звоните:</h3>
-          <a class="contacts-items__number" href="" type="tell">+7 (812) 555-66-66</a>
+          <a class="contacts-items__link contacts-items__link--number" href="" type="tell">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts-items__item">
           <h3 class="contacts-items__title">Пишите:</h3>
-          <a class="contacts-items__mail mail" href="" type="email">mail@htmlacademy.ru</a>
+          <a class="contacts-items__link contacts-items__link--mail" href="" type="email">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts-items__item">
           <h3 class="contacts-items__title">Приезжайте в гости:</h3>
-          <p class="contacts-items__addres">ул. Большая
+          <p class="contacts-items__link contacts-items__link--addres">ул. Большая
             Конюшенная, 19/8</p>
         </li>
       </ul>
@@ -195,7 +199,7 @@
     </section>
     <section class="logo-developer">
       <h2 class="visually-hidden">Логотип компании-разработчка</h2>
-      <a class="logo-developer__link" href=""> <span class="logo-developer__sign">Разработано</span></a>
+      <a class="logo-developer__link" href="">Разработано</a>
     </section>
   </footer>
 </body>
