@@ -197,6 +197,10 @@
 }
 
 .slider__item {
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .reviews__title {
@@ -240,11 +244,17 @@
 // Exit комментарии
 
 // Цены на тарифы
+.site-index__price {
+  margin-bottom: 48px;
+}
+
 .price {
   position: relative;
   background-color: #f2f2f2;
   color: #000000;
-  margin-bottom: 48px;
+  padding: 0;
+  padding-top: 127px;
+  padding-bottom: 50px;
 
   &::before {
     content: "";
@@ -278,9 +288,15 @@
 }
 
 .slider__column {
-  &--hidden {
+  background-color: #ffffff;
+
+  &--second {
     border-top: 2px solid #e5e5e5;
     align-self: flex-end;
+  }
+
+  &--hidden {
+    display: none;
   }
 }
 
