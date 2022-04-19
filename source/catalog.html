@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog PINK</title>
@@ -12,7 +13,7 @@
   <header class="site-header">
     <nav class="site-header__navigation navigation">
       <div class="navigation__logo logo">
-        <a class="logo__link" href="#">
+        <a class="logo__link" href="catalog.html">
           <img class="logo__image" src="" alt="Логотип приложения PINK." width="" height="">
           <span class="visually-hidden">Логотип приложения PINK.</span>
         </a>
@@ -21,27 +22,27 @@
         <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#">ГЛАВНАЯ</a>
+            <a class="menu__link" href="#">ГЛАВНАЯ</a>
           </li>
           <li class="menu__item">
-            <a href="#">ФОТОГРАФИИ</a>
+            <a class="menu__link" href="#">ФОТОГРАФИИ</a>
           </li>
           <li class="menu__item">
-            <a href="#">КОНКУРС</a>
+            <a class="menu__link" href="#">КОНКУРС</a>
           </li>
           <li class="menu__item">
-            <a href="#">html academy</a>
+            <a class="menu__link" href="#">html academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="site-catalog">
+  <main class="site-catalog footer-sticky">
     <h1 class="visually-hidden">Каталог сайта PINK.</h1>
     <section class="photo-gallery">
       <h2 class="photo-gallery__title title-second">Фотографии
         пользователей</h2>
-      <p class="photo-gallery__sub-title">Взгляните на фотографии, которые выкладывают пользователи!
+      <p class="photo-gallery__sub-title">Взгляните на фотографии, которые </br> выкладывают пользователи!</br>
         Видите, как не хватает ваших?</p>
       <ul class="photo-gallery__list cards-list">
         <li class="cards-list__item">
@@ -116,39 +117,39 @@
       <h2 class="visually-hidden">Редактор фотографий</h2>
       <form class="photo-editor__form editor" action="https://echo.htmlacademy.ru/" method="post"
         enctype="multipart/form-data">
-        <h3 class="editor__title">Затмите их всех!
-          Выкладывайте все, что накопилось в телефоне!</h3>
+        <h3 class="editor__title">Затмите их всех!</br>
+          Выкладывайте все, что накопилось в </br>телефоне!</h3>
         <img class="editor__image" src="" alt="" width="" height="">
         <ul class="editor__list">
           <li class="editor__item">
             <button class="editor__button editor__button--crop editor__button--active" type="button"><span
                 class="visually-hidden">Сделать кроп фотографии.</span></button>
             <div class="editor__range range range--hidden">
-              <button class="range__toggle range__toggle--crop" style="left:0;"></button>
+              <button class="range__toggle range__toggle--crop" style="left: 0;"></button>
             </div>
           </li>
           <li class="editor__item">
             <button class="editor__button editor__button--fill " type="button"><span class="visually-hidden">Сделать
                 заливку фотографии.</span></button>
             <div class="editor__range range">
-              <button class="range__toggle range__toggle--fill" style="left:0;"></button>
+              <button class="range__toggle range__toggle--fill" style="left: 0;"></button>
             </div>
           </li>
           <li class="editor__item">
             <button class="editor__button editor__button--contrast" type="button"><span class="visually-hidden">Поменять
                 контрастность фотографии.</span></button>
             <div class="editor__range range ">
-              <button class="range__toggle range__toggle--contrast" style="left:0;"></button>
-            </div>
-          </li>
-          <li class="editor__item">
-            <div class="editor__range range range--hidden">
-              <button class="range__toggle" style="left:0;"></button>
+              <button class="range__toggle range__toggle--contrast" style="left: 0;"></button>
             </div>
           </li>
         </ul>
-        <button class="editor__button button button--second" type="submit">Запостить</button>
-        <button class="editor__button button button--third" type="reset">Отмена</button>
+        <div class="editor__range range range--hidden">
+          <button class="range__toggle" style="left: 0;"></button>
+        </div>
+        <div class="editor__wrapper-button-form">
+          <button class="editor__button-form button button--second" type="submit">Запостить</button>
+          <button class="editor__button-form button button--third" type="reset">Отмена</button>
+        </div>
       </form>
     </section>
   </main>
