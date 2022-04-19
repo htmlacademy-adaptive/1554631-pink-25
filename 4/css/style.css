@@ -57,6 +57,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 .navigation {
   position: relative;
@@ -307,6 +308,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.slider__item--hidden {
+  display: none;
+}
 .reviews__title {
   margin: 0;
   margin-bottom: 30px;
@@ -335,11 +339,16 @@ body {
 .slider__toggle:last-child {
   margin-right: 0;
 }
+.site-index__price {
+  margin-bottom: 48px;
+}
 .price {
   position: relative;
   background-color: #f2f2f2;
   color: #000000;
-  margin-bottom: 48px;
+  padding: 0;
+  padding-top: 127px;
+  padding-bottom: 50px;
 }
 .price::before {
   content: "";
@@ -364,9 +373,15 @@ body {
   display: flex;
   flex-direction: column;
 }
-.slider__column--hidden {
+.slider__column {
+  background-color: #ffffff;
+}
+.slider__column--second {
   border-top: 2px solid #e5e5e5;
   align-self: flex-end;
+}
+.slider__column--hidden {
+  display: none;
 }
 .price__title {
   border: 2px solid #E5E5E5;
@@ -466,6 +481,9 @@ body {
   margin-bottom: 55px;
   padding: 0;
 }
+.form {
+  padding: 0 20px;
+}
 .form__fildset-wrapper {
   background-color: #f2f2f2;
   margin: 0;
@@ -478,8 +496,7 @@ body {
   display: flex;
   flex-direction: column;
   border: none;
-  max-width: 280px;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 42px;
   padding: 0;
 }
@@ -508,17 +525,17 @@ body {
   font-size: 18px;
 }
 .form__input {
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 30px;
   color: #283645;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
 }
 .input {
-  min-width: 280px;
-  margin: 0;
-  margin-top: 17px;
-  margin-bottom: 30px;
-  padding: 23px 20px;
+  min-width: 100%;
+  padding: 14px 20px;
   display: block;
   color: #283645;
   font-size: 18px;
@@ -651,11 +668,10 @@ body {
   margin-bottom: 60px;
 }
 .photo-gallery__list {
-  max-width: 280px;
-  margin: 0 auto;
   margin-bottom: 50px;
 }
 .cards-list {
+  max-width: 100%;
   padding: 0;
   list-style: none;
 }
@@ -663,6 +679,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 100%;
   background-color: #f2f2f2;
   padding: 0 17px;
   padding-bottom: 16px;
@@ -675,10 +692,6 @@ body {
   margin: 0;
   margin-bottom: 28px;
   padding: 0;
-}
-.cards-list__image--panorama {
-  min-width: 400px;
-  max-height: 137px;
 }
 .cards-list__title {
   font-weight: 700;
