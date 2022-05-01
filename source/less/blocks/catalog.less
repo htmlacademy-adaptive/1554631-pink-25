@@ -115,6 +115,120 @@
   text-transform: uppercase;
   color: #d22856;
 }
+
+//  Cтили галереи на планшет
+@media (min-width: @tablet-width) {
+  .photo-gallery__title {
+    color: #ffffff;
+    display: block;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 12%;
+    padding-top: 95px;
+    padding-bottom: 84px;
+    margin: 0;
+    margin-bottom: 54px;
+  }
+
+  .photo-gallery__sub-title {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 12%;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .photo-gallery__list {
+
+    margin-bottom: 50px;
+  }
+
+  .cards-list {
+    max-width: 100%;
+    padding: 0;
+    list-style: none;
+  }
+
+  .cards-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 100%;
+    background-color: #f2f2f2;
+    padding: 0 17px;
+    padding-bottom: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .cards-list__image {
+    align-self: center;
+    display: block;
+    margin: 0;
+    margin-bottom: 28px;
+    padding: 0;
+
+    &--panorama {
+    }
+  }
+
+
+  .cards-list__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+  }
+
+  .cards-list__comment-time {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .cards-list__comment {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .cards-list__favorites {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 32px;
+    border: none;
+    background-color: transparent;
+    color: #d22856;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    &--active {
+    }
+  }
+
+  .cards-list__value-favorites {
+    display: inline;
+    max-width: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #d22856;
+  }
+}
 // Exit галерея фотографий
 
 // Графический редактор
