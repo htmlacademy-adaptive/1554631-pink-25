@@ -19,18 +19,20 @@
       </div>
       <div class="navigation__menu menu">
         <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="#">ГЛАВНАЯ</a>
+        <ul class="menu__list menu__list--close">
+          <li class="menu__item menu__item--first-child">
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">ФОТОГРАФИИ</a>
+            <a class="menu__link" href="#">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">КОНКУРС</a>
+            <a class="menu__link" href="#">Фотографии</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">html academy</a>
+            <a class="menu__link" href="#">Конкурс</a>
+          </li>
+          <li class="menu__item menu__item--last-child">
+            <a class="menu__link" href="#">Html Academy</a>
           </li>
         </ul>
       </div>
@@ -57,30 +59,44 @@
     </section>
     <section class="site-index__advantages advantages">
       <h2 class="advantages__title title-second"> <span class="title-second__separator separator"> Устали от серости
-          мегаполиса?</span> <span class="title-second__separator separator"> Нам есть, что вам
+          мегаполиса?</span> <span class="title-second__separator separator"> Нам есть, что вам <br>
           предложить!</span>
       </h2>
       <ul class="advantages__list benefits-items">
         <li class="benefits-items__item ">
+          <img class="benefits-items__image benefits-items__image--hidden-descktop" src="" alt="Фотография мусорных баков.">
           <h3 class="benefits-item__title">Поднимает настроение</h3>
-          <p class="benefits-item__discription">Приложение позволит вам победить осеннюю хандру и депрессию буквально
+          <p class="benefits-item__discription benefits-item__discription--first-child">Приложение позволит вам победить осеннюю хандру и депрессию буквально
             в
             несколько кликов!</p>
         </li>
         <li class="benefits-items__item">
+          <img class="benefits-items__image benefits-items__image--hidden-descktop" src="" alt="Фотография мусорных баков с оброботкой.">
           <h3 class="benefits-item__title">Меняет мир вокруг</h3>
-          <p class="benefits-item__discription">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+          <p class="benefits-item__discription benefits-item__discription--first-child">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
             усилить эффект</p>
         </li>
         <li class="benefits-items__item">
+          <img class="benefits-items__image benefits-items__image--hidden-descktop" src="" alt="Фотография мусорных баков с обработкой и тестом (Всем Привет!).">
           <h3 class="benefits-item__title">Заводит новых друзей</h3>
-          <p class="benefits-item__discription">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+          <p class="benefits-item__discription benefits-item__discription--first-child">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
             заводите новых</p>
         </li>
-      </ul>
-      <div class="advantages__image-wrapper">
-        <img class="advantages__image" src="#" alt="Фотография мусорных баков с обработкой и тестом (Всем Привет!)."
+        <li class="benefits-items__item benefits-items__item--first">
+          <img class="benefits-items__image benefits-items__image--hidden-tablet" src="#" alt="Фотография мусорных баков с обработкой и тестом (Всем Привет!)."
         width="157" height="320">
+        </li>
+      </ul>
+      <div class="advantages__effect effect">
+        <img class="effect__image" src="" alt="таймер">
+        <div class="effect__text">
+          <h3 class="effect__title">Эффект <br class="effect__br-title">
+          на 24 часа!</h3>
+          <p class="effect__description">Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится целые сутки!</p>
+          <a class="effect__link" href="">Узнать больше об исследовании</a>
+        </div>
       </div>
     </section>
     <section class="reviews">
@@ -89,7 +105,8 @@
         <ul class="reviews__list slider__list">
           <li class="reviews__item slider__item">
             <h3 class="reviews__title">Николай Петров</h3>
-            <p class="reviews__description"></p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            <span class="reviews__sign">25 лет, водитель трамвая</span>
+            <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
@@ -120,9 +137,9 @@
         <table class="price__table slider__table">
           <tbody  class="price__table slider__table">
             <tr class="price__column slider__column  slider__column--second slider__column--hidden">
-              <td class="price__cell ">Розовый фильтр</td>
-              <td class="price__cell ">Смайлики</td>
-              <td class="price__cell ">Комментарии</td>
+              <td class="price__cell">Розовый фильтр</td>
+              <td class="price__cell">Смайлики</td>
+              <td class="price__cell">Комментарии</td>
             </tr>
             <tr class="price__column slider__column slider__column--hidden">
               <th class="price__title">База <span class="price__title-many">1,99 USD</span></th>
@@ -163,14 +180,14 @@
           <h3 class="contacts-items__title">Звоните:</h3>
           <a class="contacts-items__link contacts-items__link--number" href="" type="tell">+7 (812) 555-66-66</a>
         </li>
-        <li class="contacts-items__item">
+        <li class="contacts-items__item contacts-items__item--mail">
           <h3 class="contacts-items__title">Пишите:</h3>
           <a class="contacts-items__link contacts-items__link--mail" href="" type="email">mail@htmlacademy.ru</a>
         </li>
-        <li class="contacts-items__item">
+        <li class="contacts-items__item contacts-items__item--addres">
           <h3 class="contacts-items__title">Приезжайте в гости:</h3>
-          <p class="contacts-items__link contacts-items__link--addres">ул. Большая
-            Конюшенная, 19/8</p>
+          <a class="contacts-items__link contacts-items__link--addres" href="">ул. Большая
+            Конюшенная, 19/8</a>
         </li>
       </ul>
       <div class="contacts__maps"></div>
