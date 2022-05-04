@@ -5,19 +5,18 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .site-header__navigation {
+  margin: 0 auto;
 }
 
 .navigation {
-  position: relative;
+  max-width: 320px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
   padding: 0 20px;
-  z-index: 1;
 }
 
 .navigation__logo {
@@ -47,12 +46,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 69px;
   background-color: #283645;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: -1;
   width: 100%;
 
   &--close {
@@ -63,12 +60,15 @@
 .menu__item {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
 
   &--first-child {
+    display: flex;
+    justify-content: space-between;
     border-top: none;
   }
 }
@@ -88,11 +88,10 @@
 // Стили для планшета
 @media (min-width: @tablet-width) {
   .navigation {
-    position: relative;
+    max-width: 660px;
     display: flex;
     align-items: center;
     margin: 0 auto;
-    z-index: 1;
   }
 }
 
@@ -147,7 +146,7 @@
   }
 
   .menu__list {
-    max-width: 750px;
+    max-width: 700px;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
