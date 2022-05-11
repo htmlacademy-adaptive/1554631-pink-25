@@ -9,20 +9,20 @@
   padding-top: 44px;
   background-color: #ffffff;
   color: #000000;
-  box-shadow: 0 8px 24px -20px #000000;
+  box-shadow: 0 8px 12px 0 #E1E1E1;
+  z-index: 3;
 
   &--error {
     padding-bottom: 52px;
   }
 
   &--valid {
-    display: none;
     padding: 0 22px;
     padding-top: 44px;
   }
 
   &--open {
-    display: block;
+    display: flex;
   }
 }
 
@@ -51,10 +51,101 @@
 }
 
 .message-form__wrapper-button {
-  display: inline-block;
-  position: relative;
-  left: -22px;
-  max-width: 320px;
-  padding: 52px 22px;
+  display: block;
+  max-width: 276px;
+  margin: 0 auto;
+  padding: 52px 0;
   background-color: #f2f2f2;
 }
+
+// Cтили для планшета
+@media (min-width: @tablet-width) {
+  .message-form {
+    align-items: center;
+    flex-direction: column;
+    min-width: 460px;
+    max-width: 500px;
+    padding: 0;
+    padding-top: 50px;
+
+    &--error {
+      padding-bottom: 52px;
+    }
+
+    &--valid {
+      padding: 0;
+      padding-top: 50px;
+    }
+  }
+
+  .message-form__title {
+    max-width: 390px;
+    font-size: 30px;
+    line-height: 40px;
+
+    &--error {
+      max-width: 260px;
+    }
+  }
+
+  .message-form__description {
+    max-width: 360px;
+    display: inline-block;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    font-size: 18px;
+
+    &--error {
+      margin-bottom: 40px;
+    }
+  }
+
+  .message-form__br-description {
+    display: none;
+  }
+
+  .message-form__wrapper-button {
+    display: flex;
+    justify-content: center;
+    min-width: 460px;
+    padding: 52px 20px;
+  }
+}
+
+// Cтили для PC
+@media (min-width: @desktop_width) {
+  .message-form {
+    min-width: 780px;
+    max-width: 780px;
+
+    &--error {
+      padding-bottom: 0;
+    }
+  }
+
+  .message-form__title {
+    max-width: 396px;
+
+    &--error {
+      max-width: 396px;
+    }
+  }
+
+  .message-form__description {
+    max-width: 420px;
+    margin-bottom: 44px;
+
+    &--error {
+      margin-bottom: 68px;
+    }
+  }
+
+  .message-form__br-description {
+    display: none;
+  }
+
+  .message-form__wrapper-button {
+    min-width: 100%;
+  }
+}
+

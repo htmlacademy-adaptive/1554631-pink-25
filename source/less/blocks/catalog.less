@@ -7,10 +7,10 @@
 .photo-gallery__title {
   color: #ffffff;
   display: block;
-  background-color: #000000;
+  background-color: #1d2631;
   background-image: url("../img/catalog-img/gallery-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding: 0 12%;
   padding-top: 95px;
@@ -20,22 +20,23 @@
 }
 
 .photo-gallery__sub-title {
+  max-width: 280px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  padding: 0 12%;
-  margin: 0;
+  padding: 0;
+  margin: 0 auto;
   margin-bottom: 60px;
 }
 
 .photo-gallery__list {
-
+  margin: 0;
   margin-bottom: 50px;
 }
 
 .cards-list {
   max-width: 100%;
-  padding: 0;
+  padding: 0 20px;
   list-style: none;
 }
 
@@ -43,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-width: 100%;
+  max-width: 100%;
   background-color: #f2f2f2;
   padding: 0 17px;
   padding-bottom: 16px;
@@ -64,6 +65,8 @@
 
 
 .cards-list__title {
+  max-width: 200px;
+  min-width: 140px;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -114,119 +117,158 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #d22856;
+
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
 }
 
-//  Cтили галереи на планшет
+//  Cтили галереи фотографий на планшет
 @media (min-width: @tablet-width) {
   .photo-gallery__title {
-    color: #ffffff;
-    display: block;
-    background-color: #000000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 0 12%;
-    padding-top: 95px;
-    padding-bottom: 84px;
+    min-width: 100%;
+    background-image: url("../img/catalog-img/gallery-bg-tablet.jpg");
+    background-size: contain;
+    padding: 0 20px;
+    padding-top: 192px;
+    padding-bottom: 146px;
     margin: 0;
-    margin-bottom: 54px;
+    margin-bottom: 100px;
   }
 
   .photo-gallery__sub-title {
-    font-size: 14px;
-    line-height: 30px;
-    text-align: center;
-    padding: 0 12%;
-    margin: 0;
-    margin-bottom: 60px;
+    max-width: 500px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 85px;
+  }
+
+  .photo-gallery__br-sub-title {
+    display: none;
   }
 
   .photo-gallery__list {
-
-    margin-bottom: 50px;
+    margin-bottom: 74px;
   }
 
   .cards-list {
     max-width: 100%;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
     list-style: none;
   }
 
   .cards-list__item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 100%;
+    max-width: 100%;
     background-color: #f2f2f2;
-    padding: 0 17px;
-    padding-bottom: 16px;
+    padding: 0 30px;
+    padding-bottom: 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+
+    &--panorama {
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      grid-column: 1/3;
+      margin-bottom: 30px;
+    }
   }
 
   .cards-list__image {
-    align-self: center;
-    display: block;
-    margin: 0;
-    margin-bottom: 28px;
-    padding: 0;
+    margin-bottom: 30px;
 
     &--panorama {
     }
   }
 
-
-  .cards-list__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 0;
-    margin-bottom: 14px;
-    padding: 0;
-  }
-
-  .cards-list__comment-time {
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
-  }
-
   .cards-list__comment {
-    margin: 0;
-    margin-bottom: 25px;
-    padding: 0;
-    font-size: 14px;
-    line-height: 24px;
+    min-width: 100%;
+    flex-grow: 1;
+
+    &--panorama {
+      margin-bottom: 32px;
+      order: 3;
+    }
+  }
+
+  .cards-list__br-comment {
+    display: none;
   }
 
   .cards-list__favorites {
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    padding-left: 32px;
-    border: none;
-    background-color: transparent;
-    color: #d22856;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
+    min-width: 100%;
+    order: 2;
+    text-align: left;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 100px;
+
+    &--panorama {
+      min-width: 120px;
+      max-width: 200px;
+      padding-right: 0;
+    }
 
     &--active {
     }
   }
 
   .cards-list__value-favorites {
-    display: inline;
-    max-width: 50px;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #d22856;
+    &--panorama {
+      padding-right: 13px;
+    }
+  }
+}
+
+//  Cтили галереи фотографий на PC
+@media (min-width: @desktop_width) {
+  .photo-gallery__title {
+    background-image: url("../img/catalog-img/gallery-bg-desktop.jpg");
+    padding-top: 184px;
+    padding-bottom: 104px;
+  }
+
+  .photo-gallery__sub-title {
+    max-width: 572px;
+    margin-bottom: 97px;
+  }
+
+  .photo-gallery__br-sub-title {
+    display: block;
+  }
+
+  .photo-gallery__list {
+    margin-bottom: 68px;
+  }
+
+  .cards-list {
+    grid-template-columns: repeat(3, 300px);
+    row-gap: 54px;
+  }
+
+  .cards-list__item {
+    &--panorama {
+      grid-column: 1/4;
+      margin-bottom: 0;
+    }
+  }
+
+  .cards-list__favorites {
+    &--panorama {
+      position: relative;
+    }
+
+    &--active {
+    }
   }
 }
 // Exit галерея фотографий
@@ -297,12 +339,28 @@
 }
 
 .range {
+  display: none;
+  margin-left: auto;
+  height: 2px;
+  width: 240px;
+  position: relative;
+  background-color: #283645;
 
   &--hidden {
+    display: block;
   }
 }
 
 .range__toggle {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  background-color: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
 
   &--crop {
   }
@@ -323,4 +381,178 @@
 
 .editor__button-form {
   margin: 0 auto;
+  margin-bottom: 13px;
 }
+
+// Cтили графического редактора на планшет
+@media (min-width: @tablet-width) {
+  .editor {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    column-gap: 20px;
+    position: relative;
+    padding: 0 20px;
+    padding-top: 120px;
+    background-color: #f2f2f2;
+  }
+
+  .editor__title {
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    margin-bottom: 0;
+    padding: 0 18%;
+    padding-bottom: 78px;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .editor__br-title {
+    display: none;
+  }
+
+  .editor__image {
+    width: 300px;
+    grid-row: 1/4;
+    padding-top: 60px;
+    padding-bottom: 54px;
+    background-color: #f2f2f2;
+  }
+
+  .editor__list {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-column: 2/3;
+    margin-bottom: 68px;
+    padding-top: 40px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .editor__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 6px;
+    padding-right: 18px;
+    border-bottom: 1px solid #dedfe1;
+  }
+
+  .editor__button {
+
+    &--active {
+    }
+
+    &--crop {
+    }
+
+    &--fill {
+    }
+
+    &--contrast {
+    }
+  }
+
+  .range {
+    width: 200px;
+    display: block;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  .editor__wrapper-button-form {
+    max-width: 300px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    grid-column: 2/3;
+    background-color: #f2f2f2;
+    padding: 0;
+    padding-right: 12px;
+    padding-bottom: 30px;
+  }
+
+  .editor__button-form {
+    width: 260px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}
+
+// Cтили графического редактора на PC
+@media (min-width: @desktop_width) {
+  .editor {
+    column-gap: 90px;
+  }
+
+  .editor__title {
+    padding: 0 30%;
+    padding-bottom: 74px;
+  }
+
+  .editor__image {
+    width: 380px;
+    padding-top: 60px;
+    padding-bottom: 54px;
+    padding-left: 80px;
+  }
+
+  .editor__list {
+    width: 410px;
+    margin-right: 60px;
+    margin-bottom: 140px;
+    padding-top: 54px;
+    padding-left: 0;
+  }
+
+  .editor__item {
+    padding-right: 30px;
+  }
+
+  .editor__button {
+
+    &--active {
+    }
+
+    &--crop {
+    }
+
+    &--fill {
+    }
+
+    &--contrast {
+    }
+  }
+
+  .range {
+    width: 288px;
+    display: block;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  .editor__wrapper-button-form {
+    max-width: 410px;
+    justify-content: space-between;
+    margin-right: 60px;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
+  .editor__button-form {
+    width: 184px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}
+// Exit графический редактор
