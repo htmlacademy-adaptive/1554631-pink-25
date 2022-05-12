@@ -13,25 +13,32 @@
   <header class="site-header">
     <nav class="site-header__navigation navigation">
       <div class="navigation__logo logo">
-        <a class="logo__link" href="catalog.html">
+        <a class="logo__link" href="form.html">
           <img class="logo__image" src="" alt="Логотип приложения PINK." width="" height="">
           <span class="visually-hidden">Логотип приложения PINK.</span>
         </a>
       </div>
       <div class="navigation__menu menu">
         <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="#">ГЛАВНАЯ</a>
+        <ul class="menu__list menu__list--close">
+          <li class="menu__item menu__item--first-child">
+            <a class="logo__link" href="form.html">
+              <img class="logo__image" src="" alt="Логотип приложения PINK." width="" height="">
+              <span class="visually-hidden">Логотип приложения PINK.</span>
+            </a>
+            <button class="menu__toggle-close" type="button"> <span class="visually-hidden">Закрыть список меню.</span></button>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">ФОТОГРАФИИ</a>
+            <a class="menu__link" href="#">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">КОНКУРС</a>
+            <a class="menu__link" href="#">Фотографии</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">html academy</a>
+            <a class="menu__link" href="#">Конкурс</a>
+          </li>
+          <li class="menu__item menu__item--last-child">
+            <a class="menu__link" href="#">Html Academy</a>
           </li>
         </ul>
       </div>
@@ -48,87 +55,91 @@
       <h2 class="visually-hidden">Форма заполения для историй пользователей</h2>
       <p class="form-section__subtitle">Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
-        миль на вашу бонусную карту!</p>
+        миль на вашу бонусную карту!
+        <span class="form-section__subtitle-sign">Пожалуйста, заполните форму ниже:</span>
+      </p>
       <form class="form-section form" name="form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--personal-date">
           <legend class="form__legend visually-hidden">Личные данные пользователей</legend>
-          <label class="form__lable">ФАМИЛИЯ:
-            <input class="form__input input input--required" placeholder="Укажите фамилию *" name="family" type="text">
+          <label class="form__lable form__lable--personal-data"> <span class="form__lable-sign">ФАМИЛИЯ:</span>
+            <input class="form__input form__input--perosal-data input input--required input--family" placeholder="Укажите фамилию *" name="family" type="text">
           </label>
-          <label class="form__lable">Имя:
-            <input class="form__input input input--required" placeholder="Введите ваше имя  *" name="name" type="text">
+          <label class="form__lable form__lable--personal-data"> <span class="form__lable-sign">Имя:</span>
+            <input class="form__input form__input--perosal-data input input--required input--name" placeholder="Введите ваше имя  *" name="name" type="text">
           </label>
-          <label class="form__lable">Отчество:
-            <input class="form__input input" placeholder="Ну и отчество тоже" name="patronymic" type="text">
+          <label class="form__lable form__lable--personal-data"> <span class="form__lable-sign">Отчество:</span>
+            <input class="form__input form__input--perosal-data input input--family" placeholder="Ну и отчество тоже" name="patronymic" type="text">
           </label>
         </fieldset>
         <!-- <div class="form__fildset-wrapper"> Для фона на всю ширину страницы -->
-        <div class="form__fildset-wrapper">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Ваши безбашенные <br>
+        <div class="form__fildset-wrapper form__fildset-wrapper--progress">
+          <fieldset class="form__fieldset form__fieldset--progress">
+            <legend class="form__legend">Ваши безбашенные <br class="form__legend-br">
             достижения в путешествии</legend>
-            <label class="form__lable form__lable--checked">
+            <label class="form__lable form__lable--nth-child1 form__lable--checked">
               <input class="form__input-checkbox input-checkbox" checked name="selfie_with_a_shark" value="yes"
               type="checkbox">Сделал селфи с акулой
             </label>
-            <label class="form__lable form__lable--checked">
+            <label class="form__lable  form__lable--nth-child4 form__lable--checked">
               <input class="form__input-checkbox input-checkbox" checked name="burned" value="yes" type="checkbox">Обгорел
             на пляже
             </label>
-            <label class="form__lable form__lable--checked">
+            <label class="form__lable  form__lable--nth-child2 form__lable--checked">
               <input class="form__input-checkbox input-checkbox" name="chuck_norris" value="yes" type="checkbox">Видел
             Чака Норриса
             </label>
-            <label class="form__lable form__lable--checked">
+            <label class="form__lable  form__lable--nth-child5 form__lable--checked">
               <input class="form__input-checkbox input-checkbox" name="souvenirs" value="yes" type="checkbox">Накупил
             сувениров
             </label>
-            <label class="form__lable form__lable--checked">
+            <label class="form__lable form__lable--nth-child3n  form__lable--nth-child3 form__lable--checked">
               <input class="form__input-checkbox input-checkbox" checked name="held_tower" value="yes"
               type="checkbox">Удержал башню
             </label>
-            <label class="form__lable form__lable--checked">
+            <label class="form__lable form__lable--nth-child3n  form__lable--nth-child6 form__lable--checked">
               <input class="form__input-checkbox input-checkbox input-checkbox--last-child" name="trashed_hotel" value="yes"
               type="checkbox">Разгромил отель
             </label>
           </fieldset>
         </div>
-        <fieldset class="form__fieldset">
-          <legend class="form__legend visually-hidden">Контактная информация</legend>
-          <label class="form__lable">Номер телефона
-            <input class="form__input input input--number" placeholder="Номер, пожалуйста" name="number" type="number">
+        <fieldset class="form__fieldset form__fieldset--contacts-info">
+          <legend class="form__legend form__legend--hidden">Контактная информация</legend>
+          <label class="form__lable form__lable--contacts-info form__lable--number"><span class="form__lable-sign">Номер телефона</span>
+            <input class="form__input input input--number" placeholder="Номер, пожалуйста" name="phone" type="tel">
           </label>
-          <label class="form__lable">Адрес почты
+          <label class="form__lable form__lable--contacts-info form__lable--mail"><span class="form__lable-sign">Адрес почты</span>
             <input class="form__input input input--mail input--required" placeholder="Введите почту *" name="mail"
               type="email">
           </label>
         </fieldset>
         <!-- <div class="form__fildset-wrapper"> Для фона на всю ширину страницы -->
-        <div class="form__fildset-wrapper">
-          <fieldset class="form__fieldset">
+        <div class="form__fildset-wrapper form__fildset-wrapper--apps">
+          <fieldset class="form__fieldset form__fieldset--apps">
             <legend class="form__legend">С каким приложением
             путешествовали?</legend>
-            <label class="form__lable form__lable--checked">
+            <label class="form__lable form__lable--radio">
               <input class="form__input-radio input-radio" checked name="os" value="ios" type="radio">Pink
             для iOS
             </label>
-            <label class="form__lable form__lable--checked">
+            <label class="form__lable form__lable--radio">
             <input class="form__input-radio input-radio" name="os" value="android" type="radio">Pink на
             Android
             </label>
-            <label class="form__lable form__lable--checked">
-              <input class="form__input-radio input-radio input-radio--last-child" name="os" value="windows" type="radio">Windows
+            <label class="form__lable form__lable--radio">
+              <input class="form__input-radio form__input-radio--last-child input-radio" name="os" value="windows" type="radio">Windows
             Phone
             </label>
           </fieldset>
         </div>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--emotion">
           <legend class="form__legend form__legend--emotion">Опишите свои эмоции</legend>
           <textarea class="form__textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="form__button button button--form" type="submit">Отправить форму</button>
+        <div class="form__button-container">
+          <button class="form__button button button--form" type="submit">Отправить форму</button>
+          <b class="form-section__sign"><span class="form-section__sign-star">*</span> — обязательные  <span class="form-section__sign-desktop">для заполнения</span> поля</b>
+        </div>
       </form>
-      <b class="form-section__sign"><span class="form-section__sign-star">*</span> — обязательные поля</b>
     </section>
   </main>
   <footer class="site-footer">
@@ -158,16 +169,18 @@
     </section>
   </footer>
   <div class="message-form message-form--error">
-    <h1 class="message-form__title">Что-то пошло не так!</h1>
+    <h1 class="message-form__title message-form__title--error">Что-то пошло не так!</h1>
     <p class="message-form__description message-form__description--error">Проверьте поля, выделенные красным,
       скорее всего вы забыли их заполнить</p>
-    <button class="button button--form" type="button">ОК</button>
+    <div class="message-form__wrapper-button">
+      <button class="button button--form" type="button">ОК</button>
+    </div>
   </div>
-  <div class="message-form message-form--valid message-form--open">
+  <div class="message-form message-form--valid">
     <h1 class="message-form__title">Ваша заявка отправлена</h1>
-    <p class="message-form__description">Спасибо за ваше участие, ваша заявка <br>
-      уже поступила к нам. В ближайшее <br>
-      время мы рассмотрим ее и <br>
+    <p class="message-form__description">Спасибо за ваше участие, ваша заявка <br class="message-form__br-description">
+      уже поступила к нам. В ближайшее <br class="message-form__br-description">
+      время мы рассмотрим ее и <br class="message-form__br-description">
       оповестим вас.</p>
     <div class="message-form__wrapper-button">
       <button class="button button--form" type="button">ЗАКРЫТЬ ОКНО</button>

@@ -1,5 +1,5 @@
 .button {
-  min-width: 280px;
+  width: 280px;
   display: block;
   font-family: "Open Sans", sans-serif;
   background-color: transparent;
@@ -28,5 +28,12 @@
   &--third {
     color: #dedfe1;
     border: 3px solid #dedfe1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: 300px;
+    padding: 18px 42px;
   }
 }
