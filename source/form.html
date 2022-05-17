@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <header class="site-header site-header--no-js">
     <nav class="site-header__navigation navigation">
       <div class="navigation__logo logo">
         <a class="logo__link" href="index.html">
@@ -19,14 +19,9 @@
         </a>
       </div>
       <div class="navigation__menu menu">
-        <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
-        <ul class="menu__list menu__list--close">
+        <button class="menu__toggle menu__toggle--close" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
+        <ul class="menu__list menu__list--open">
           <li class="menu__item menu__item--first-child">
-            <a class="logo__link" href="index.html">
-              <img class="logo__image" src="" alt="Логотип приложения PINK." width="" height="">
-              <span class="visually-hidden">Логотип приложения PINK.</span>
-            </a>
-            <button class="menu__toggle-close" type="button"> <span class="visually-hidden">Закрыть список меню.</span></button>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="index.html">Главная</a>
@@ -38,7 +33,7 @@
             <a class="menu__link menu__link--active" href="#">Конкурс</a>
           </li>
           <li class="menu__item menu__item--last-child">
-            <a class="menu__link" href="#">Html Academy</a>
+            <a class="menu__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -77,28 +72,28 @@
             <legend class="form__legend">Ваши безбашенные <br class="form__legend-br">
             достижения в путешествии</legend>
             <label class="form__lable form__lable--nth-child1 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox" checked name="selfie_with_a_shark" value="yes"
-              type="checkbox">Сделал селфи с акулой
+              <input class="form__input-checkbox input-checkbox visually-hidden" checked name="selfie_with_a_shark" value="yes"
+              type="checkbox"><span class="form__checkbox-style"></span>Сделал селфи с акулой
             </label>
             <label class="form__lable  form__lable--nth-child4 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox" checked name="burned" value="yes" type="checkbox">Обгорел
+              <input class="form__input-checkbox input-checkbox visually-hidden" checked name="burned" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Обгорел
             на пляже
             </label>
             <label class="form__lable  form__lable--nth-child2 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox" name="chuck_norris" value="yes" type="checkbox">Видел
+              <input class="form__input-checkbox input-checkbox visually-hidden" name="chuck_norris" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Видел
             Чака Норриса
             </label>
             <label class="form__lable  form__lable--nth-child5 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox" name="souvenirs" value="yes" type="checkbox">Накупил
+              <input class="form__input-checkbox input-checkbox visually-hidden" name="souvenirs" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Накупил
             сувениров
             </label>
             <label class="form__lable form__lable--nth-child3n  form__lable--nth-child3 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox" checked name="held_tower" value="yes"
-              type="checkbox">Удержал башню
+              <input class="form__input-checkbox input-checkbox visually-hidden" checked name="held_tower" value="yes"
+              type="checkbox"><span class="form__checkbox-style"></span>Удержал башню
             </label>
             <label class="form__lable form__lable--nth-child3n  form__lable--nth-child6 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox input-checkbox--last-child" name="trashed_hotel" value="yes"
-              type="checkbox">Разгромил отель
+              <input class="form__input-checkbox input-checkbox input-checkbox--last-child visually-hidden" name="trashed_hotel" value="yes"
+              type="checkbox"><span class="form__checkbox-style"></span>Разгромил отель
             </label>
           </fieldset>
         </div>
@@ -118,15 +113,15 @@
             <legend class="form__legend">С каким приложением
             путешествовали?</legend>
             <label class="form__lable form__lable--radio">
-              <input class="form__input-radio input-radio" checked name="os" value="ios" type="radio">Pink
+              <input class="form__input-radio input-radio visually-hidden" checked name="os" value="ios" type="radio"><span class="form__radio-style"></span>Pink
             для iOS
             </label>
             <label class="form__lable form__lable--radio">
-            <input class="form__input-radio input-radio" name="os" value="android" type="radio">Pink на
+            <input class="form__input-radio input-radio visually-hidden" name="os" value="android" type="radio"><span class="form__radio-style"></span>Pink на
             Android
             </label>
             <label class="form__lable form__lable--radio">
-              <input class="form__input-radio form__input-radio--last-child input-radio" name="os" value="windows" type="radio">Windows
+              <input class="form__input-radio form__input-radio--last-child input-radio visually-hidden" name="os" value="windows" type="radio"><span class="form__radio-style"></span>Windows
             Phone
             </label>
           </fieldset>
@@ -186,6 +181,7 @@
       <button class="button button--form" type="button">ЗАКРЫТЬ ОКНО</button>
     </div>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

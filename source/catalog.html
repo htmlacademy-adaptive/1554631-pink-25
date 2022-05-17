@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <header class="site-header site-header--no-js">
     <nav class="site-header__navigation navigation">
       <div class="navigation__logo logo">
         <a class="logo__link" href="index.html">
@@ -19,14 +19,9 @@
         </a>
       </div>
       <div class="navigation__menu menu">
-        <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
-        <ul class="menu__list menu__list--close">
+        <button class="menu__toggle menu__toggle--close" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
+        <ul class="menu__list menu__list--open">
           <li class="menu__item menu__item--first-child">
-            <a class="logo__link" href="index.html">
-              <img class="logo__image" src="" alt="Логотип приложения PINK." width="" height="">
-              <span class="visually-hidden">Логотип приложения PINK.</span>
-            </a>
-            <button class="menu__toggle-close" type="button"> <span class="visually-hidden">Закрыть список меню.</span></button>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="index.html">Главная</a>
@@ -38,7 +33,7 @@
             <a class="menu__link" href="form.html">Конкурс</a>
           </li>
           <li class="menu__item menu__item--last-child">
-            <a class="menu__link" href="#">Html Academy</a>
+            <a class="menu__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -188,6 +183,7 @@
       </section>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
