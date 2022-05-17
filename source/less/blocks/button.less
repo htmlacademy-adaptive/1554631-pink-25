@@ -8,32 +8,78 @@
   font-size: 18px;
   line-height: 18px;
   text-align: center;
-  padding: 18px 36px;
+  padding: 18px 35px;
   border: 3px solid #ffffff;
   border-radius: 29px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: rgba(210 ,40 ,86, 0.3);
+  }
 
   &--form {
     background-color: #2aab6d;
     border-radius: 0;
     padding: 24px 36px;
     border: none;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      background-color: #1c9b5e;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+      color: #ffffff;
+    }
   }
 
   &--second {
     color: #d22856;
     border: 3px solid #d22856;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #d22856;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #d22856;
+    }
   }
 
   &--third {
     color: #dedfe1;
     border: 3px solid #dedfe1;
+
+    &:hover {
+      color: #b6babe;
+      border: 3px solid #b6babe;
+    }
+
+    &:active {
+      color: #dedfe1;
+      border: 3px solid #b6babe;
+      background-color: #b6babf;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
   .button {
     width: 300px;
-    padding: 18px 42px;
+    padding: 18px 36px;
   }
 }

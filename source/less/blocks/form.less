@@ -141,7 +141,7 @@
 
 .input {
   min-width: 100%;
-  padding: 13px 20px;
+  padding: 14px 20px;
   display: block;
   color: #283645;
   font-size: 18px;
@@ -158,6 +158,21 @@
 
   &--number {
   }
+
+  &:hover {
+    outline: none;
+    border: 2px solid #46525f;
+  }
+
+  &:active {
+    outline: none;
+    border: 2px solid #d22856;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid #d22856;
+  }
 }
 
 .form__input-checkbox {
@@ -171,11 +186,31 @@
   position: relative;
   width: 35px;
   height: 35px;
-  visibility: hidden;
+
+  &:checked + .form__checkbox-style::before {
+    background-image: url("../img/form-img/svg/tick-checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  &:focus-visible + .form__checkbox-style::before {
+    outline: none;
+    border: 2px solid #d22856;
+  }
+}
+
+.form__checkbox-style {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  margin-right: 22px;
+  padding: 0;
 
   &::before {
     display: block;
-    visibility: visible;
     content: "";
     position: absolute;
     width: 35px;
@@ -186,10 +221,14 @@
     border-radius: 1px;
   }
 
-  &:checked::before {
-    background-image: url("../img/form-img/svg/tick-checkbox.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &:hover::before {
+    outline: none;
+    border: 2px solid #283645;
+  }
+
+  &:active::before {
+    outline: none;
+    border: 2px solid #d22856;
   }
 }
 
@@ -204,11 +243,30 @@
   position: relative;
   width: 37px;
   height: 37px;
-  visibility: hidden;
+
+  &:checked + .form__radio-style::before {
+    background-image: url("../img/form-img/svg/ellipse-radio.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:focus-visible + .form__radio-style::before {
+    outline: none;
+    border: 2px solid #283645;
+  }
+}
+
+.form__radio-style {
+  width: 37px;
+  height: 37px;
+  display: block;
+  position: relative;
+  margin: 0;
+  margin-right: 54px;
+  padding: 0;
 
   &::before {
     display: block;
-    visibility: visible;
     content: "";
     position: absolute;
     width: 37px;
@@ -219,10 +277,14 @@
     box-sizing: border-box;
   }
 
-  &:checked::before {
-    background-image: url("../img/form-img/svg/ellipse-radio.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &:hover::before {
+    outline: none;
+    border: 2px solid #283645;
+  }
+
+  &:active::before {
+    outline: none;
+    border: 2px solid #d22856;
   }
 }
 
@@ -375,15 +437,15 @@
       &::before {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 2px;
+        right: 2px;
         display: block;
         background-color: #e5e5e5;
         background-image: url("../img/form-img/svg/phone-icon.svg");
         background-repeat: no-repeat;
         background-position: center;
         width: 56px;
-        height: 60px;
+        height: 58px;
       }
     }
 
@@ -393,15 +455,15 @@
       &::before {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 2px;
+        right: 2px;
         display: block;
         background-color: #e5e5e5;
         background-image: url("../img/form-img/svg/mail-icon.svg");
         background-repeat: no-repeat;
         background-position: center;
         width: 56px;
-        height: 60px;
+        height: 58px;
       }
     }
   }

@@ -325,6 +325,10 @@
   text-align: center;
 }
 
+.benefits-item__br-title {
+  display: none;
+}
+
 .benefits-item__discription {
   margin: 0;
   padding: 0;
@@ -584,6 +588,10 @@
     font-size: 30px;
     line-height: 30px;
     text-align: center;
+  }
+
+  .benefits-item__br-title {
+    display: block;
   }
 
   .benefits-item__discription {
@@ -1275,7 +1283,7 @@
 
 // Контакты
 .contacts {
-  max-width: 280px;
+
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -1295,7 +1303,8 @@
 }
 
 .contacts-items__item {
-  margin: 0;
+  max-width: 280px;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 30px;
 }
@@ -1329,9 +1338,41 @@
 
   &--addres {
   }
+
+  &:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
 }
 
 .contacts__maps {
+  position: relative;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    display: block;
+    min-width: 100%;
+    height: 123px;
+    top: -90px;
+    position: absolute;
+    background-image: url("../img/index-img/triangle-maps.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.contacts__maps-google {
+  min-width: 320px;
+  min-height: 200px;
+  width: 100%;
+  border: none;
+  display: block;
 }
 
 // Cтили Contacts для планшета
@@ -1355,6 +1396,7 @@
   }
 
   .contacts-items {
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 310px);
     row-gap: 25px;
@@ -1408,6 +1450,14 @@
   }
 
   .contacts__maps {
+    &::before {
+      content: "";
+      top: -55px;
+    }
+  }
+
+  .contacts__maps-google {
+    min-height: 374px;
   }
 }
 
@@ -1489,5 +1539,14 @@
   }
 
   .contacts__maps {
+    &::before {
+      content: "";
+      min-width: 100%;
+      top: 0;
+    }
+  }
+
+  .contacts__maps-google {
+    min-height: 502px;
   }
 }
