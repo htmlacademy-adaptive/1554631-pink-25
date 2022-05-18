@@ -17,9 +17,9 @@
           <span class="visually-hidden">Логотип приложения PINK.</span>
         </a>
       </div>
-      <div class="navigation__menu menu">
-        <button class="menu__toggle  menu__toggle--close"  type="button"> <span class="visually-hidden">Открыть меню.</span></button>
-        <ul class="menu__list  menu__list--open">
+      <div class="navigation__menu menu  menu--opened">
+        <button class="menu__toggle"  type="button"> <span class="visually-hidden">Открыть меню.</span></button>
+        <ul class="menu__list">
           <li class="menu__item menu__item--first-child">
           </li>
           <li class="menu__item">
@@ -88,12 +88,11 @@
         </li>
       </ul>
       <div class="advantages__effect effect">
-        <img class="effect__image" src="" alt="таймер">
         <div class="effect__text">
           <h3 class="effect__title">Эффект <br class="effect__br-title">
           на 24 часа!</h3>
           <p class="effect__description">Британские ученые провели исследования
-            и доказали, что положительный эффект
+            и доказали, <br class="effect__br-description"> что положительный эффект
             от использования приложения длится целые сутки!</p>
           <a class="effect__link" href="">Узнать больше об исследовании</a>
         </div>
@@ -103,22 +102,22 @@
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__wrapper slider">
         <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
+          <li class="reviews__item slider__item slider__item--active">
             <h3 class="reviews__title">Николай Петров</h3>
             <span class="reviews__sign">25 лет, водитель трамвая</span>
             <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
-          <li class="reviews__item slider__item slider__item--hidden">
+          <li class="reviews__item slider__item">
             <h3 class="reviews__title"> Николай Петров</h3>
-            <p class="reviews__description"></p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
-          <li class="reviews__item slider__item slider__item--hidden">
+          <li class="reviews__item slider__item">
             <h3 class="reviews__title"> Николай Петров</h3>
-            <p class="reviews__description"></p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            <p class="reviews__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
             привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
@@ -136,24 +135,24 @@
       <div class="price__wrapper slider">
         <table class="price__table slider__table">
           <tbody  class="price__table slider__table">
-            <tr class="price__column slider__column  slider__column--second slider__column--hidden">
+            <tr class="price__column slider__column  slider__column--second">
               <td class="price__cell">Розовый фильтр</td>
               <td class="price__cell">Смайлики</td>
               <td class="price__cell">Комментарии</td>
             </tr>
-            <tr class="price__column slider__column slider__column--hidden">
+            <tr class="price__column slider__column">
               <th class="price__title">База <span class="price__title-many">1,99 USD</span></th>
               <td class="price__cell"> <span class="price__signature">Розовый фильтр</span> </td>
               <td class="price__cell"> <span class="price__signature">Смайлики</span> </td>
               <td class="price__cell"> <span class="price__signature">Комментарии</span> </td>
             </tr>
-            <tr class="price__column slider__column">
+            <tr class="price__column slider__column slider__column--active">
               <th class="price__title price__title--hit">СТАНДАРТ <span class="price__title-many">3,99 USD</span> </th>
               <td class="price__cell"> <span class="price__signature">Розовый фильтр</span> </td>
               <td class="price__cell"> <span class="price__signature">Смайлики</span> </td>
               <td class="price__cell"> <span class="price__signature">Комментарии</span> </td>
             </tr>
-            <tr class="price__column slider__column slider__column--hidden">
+            <tr class="price__column slider__column ">
               <th class="price__title">АНЛИМ <span class="price__title-many">9,99 USD</span></th>
               <td class="price__cell"> <span class="price__signature">Розовый фильтр</span> </td>
               <td class="price__cell"> <span class="price__signature">Смайлики</span> </td>
