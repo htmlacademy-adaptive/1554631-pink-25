@@ -1632,10 +1632,10 @@ body {
 .form__fildset-wrapper {
   background-color: #f2f2f2;
   margin: 0;
-  margin-bottom: 0;
+  margin-bottom: 42px;
   padding: 0;
   padding-top: 42px;
-  padding-bottom: 12px;
+  padding-bottom: 1px;
 }
 .form__fieldset {
   display: flex;
@@ -1647,6 +1647,7 @@ body {
 }
 .form__fieldset--emotion {
   margin: 0 auto;
+  margin-bottom: 42px;
 }
 .form__legend {
   margin: 0;
@@ -2355,12 +2356,13 @@ body {
 }
 .photo-gallery__sub-title {
   max-width: 280px;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
   padding: 0;
   margin: 0 auto;
   margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
 }
 .photo-gallery__list {
   margin: 0;
@@ -2370,6 +2372,7 @@ body {
   max-width: 100%;
   padding: 0 20px;
   list-style: none;
+  color: #283645;
 }
 .cards-list__item {
   display: flex;
@@ -2557,6 +2560,8 @@ body {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+  color: #283645;
+  font-weight: 400;
 }
 .editor__image {
   display: block;
@@ -2570,19 +2575,22 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 44px;
-  padding-bottom: 34px;
+  padding-top: 43px;
+  padding-bottom: 39px;
   list-style: none;
   background-color: #f2f2f2;
-  border-bottom: 1px solid #dedfe1;
 }
 .editor__item {
   margin: 0 auto;
   padding: 0;
 }
+.editor__wrapper-range {
+  background-color: #f2f2f2;
+  padding-bottom: 34px;
+}
 .range {
   display: none;
-  margin-left: auto;
+  margin: 0 auto;
   height: 2px;
   width: 240px;
   position: relative;
@@ -2596,7 +2604,7 @@ body {
   width: 14px;
   height: 14px;
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   transform: translateY(50%);
   background-color: #ffffff;
   border: 2px solid #d22856;
@@ -2610,6 +2618,7 @@ body {
   padding: 0;
   padding-top: 38px;
   padding-bottom: 42px;
+  border-top: 1px solid #dedfe1;
 }
 .editor__button-form {
   margin: 0 auto;
@@ -2668,9 +2677,14 @@ body {
     padding-right: 18px;
     border-bottom: 1px solid #dedfe1;
   }
+  .editor__wrapper-range {
+    display: none;
+  }
   .range {
     width: 200px;
     display: block;
+    margin: 0;
+    margin-left: auto;
   }
   .range--hidden {
     display: none;
@@ -2685,6 +2699,7 @@ body {
     padding: 0;
     padding-right: 12px;
     padding-bottom: 30px;
+    border-top: none;
   }
   .editor__button-form {
     width: 260px;
