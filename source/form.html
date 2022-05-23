@@ -3,6 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +15,15 @@
 
 <body>
   <header class="site-header site-header--no-js">
-    <nav class="site-header__navigation navigation">
-      <div class="navigation__logo logo">
+    <nav class="site-header__navigation">
+      <div class="site-header__logo logo">
         <a class="logo__link" href="index.html">
-          <img class="logo__image" src="" alt="Логотип приложения PINK." width="" height="">
+          <svg class="logo__icon" width="74" height="23" viewBox="0 0 74 23" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5A1.3 1.3 0 011.3.3h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3H2.5v6.8A1.3 1.3 0 011.3 23 1.3 1.3 0 010 21.6v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9H2.7v9.9H8zM21.6 1.4A1.3 1.3 0 0122.9 0 1.3 1.3 0 0124 1.4v20.2A1.3 1.3 0 0123 23a1.3 1.3 0 01-1.3-1.4V1.4zM30.7 1.4A1.3 1.3 0 0131.9.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17A1.2 1.2 0 0148.4.2a1.2 1.2 0 011.2 1.3v20.3a1.1 1.1 0 01-1.1 1.1h-.2A1.7 1.7 0 0147 22L33.1 4.2v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V1.4zM56 1.4A1.3 1.3 0 0157.1 0a1.3 1.3 0 011.3 1.4v12.3L71.2.6c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-1.3 1.2 1.2 1.2 0 01-1-.6L63.3 12l-4.8 4.8v4.9a1.3 1.3 0 01-1.3 1.3 1.3 1.3 0 01-1.3-1.3V1.4z"/></svg>
           <span class="visually-hidden">Логотип приложения PINK.</span>
         </a>
       </div>
-      <div class="navigation__menu menu menu--opened">
-        <button class="menu__toggle" type="button"> <span class="visually-hidden">Открыть меню.</span></button>
+      <div class="site-header__menu menu  menu--opened">
+        <button class="menu__toggle"  type="button"> <span class="visually-hidden">Открыть меню.</span></button>
         <ul class="menu__list">
           <li class="menu__item menu__item--first-child">
           </li>
@@ -33,27 +37,27 @@
             <a class="menu__link menu__link--active" href="#">Конкурс</a>
           </li>
           <li class="menu__item menu__item--last-child">
-            <a class="menu__link" href="#">HTML Academy</a>
+            <a class="menu__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="site-forms footer-sticky">
+  <main class="site-forms">
     <h1 class="visually-hidden">Формы сайта PINK</h1>
-    <section class="site-forms__intro intro-forms">
-      <h2 class="intro-forms__title title-second">Конкурс на самое
+    <div class="site-forms__intro">
+      <h2 class="site-forms__title title-second">Конкурс на самое
         безбашенное
         путешествие с Пинк</h2>
-    </section>
-    <section class="site-forms__form-section form-section">
+    </div>
+    <div class="site-forms__form-section">
       <h2 class="visually-hidden">Форма заполения для историй пользователей</h2>
-      <p class="form-section__subtitle">Поделитесь своей историей и получите
+      <p class="site-forms__subtitle">Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
         миль на вашу бонусную карту!
-        <span class="form-section__subtitle-sign">Пожалуйста, заполните форму ниже:</span>
+        <span class="site-forms__subtitle-sign">Пожалуйста, заполните форму ниже:</span>
       </p>
-      <form class="form-section form" name="form" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="site-forms__form form" name="form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form__fieldset form__fieldset--personal-date">
           <legend class="form__legend visually-hidden">Личные данные пользователей</legend>
           <label class="form__lable form__lable--personal-data"> <span class="form__lable-sign">ФАМИЛИЯ:</span>
@@ -76,35 +80,39 @@
               type="checkbox"><span class="form__checkbox-style"></span>Сделал селфи с акулой
             </label>
             <label class="form__lable  form__lable--nth-child4 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox visually-hidden" checked name="burned" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Обгорел
+              <input class="form__input-checkbox input--checkbox visually-hidden" checked name="burned" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Обгорел
             на пляже
             </label>
             <label class="form__lable  form__lable--nth-child2 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox visually-hidden" name="chuck_norris" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Видел
+              <input class="form__input-checkbox input--checkbox visually-hidden" name="chuck_norris" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Видел
             Чака Норриса
             </label>
             <label class="form__lable  form__lable--nth-child5 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox visually-hidden" name="souvenirs" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Накупил
+              <input class="form__input-checkbox input--checkbox visually-hidden" name="souvenirs" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Накупил
             сувениров
             </label>
             <label class="form__lable form__lable--nth-child3n  form__lable--nth-child3 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox visually-hidden" checked name="held_tower" value="yes"
+              <input class="form__input-checkbox input--checkbox visually-hidden" checked name="held_tower" value="yes"
               type="checkbox"><span class="form__checkbox-style"></span>Удержал башню
             </label>
             <label class="form__lable form__lable--nth-child3n  form__lable--nth-child6 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox input-checkbox--last-child visually-hidden" name="trashed_hotel" value="yes"
+              <input class="form__input-checkbox input--checkbox  visually-hidden" name="trashed_hotel" value="yes"
               type="checkbox"><span class="form__checkbox-style"></span>Разгромил отель
             </label>
           </fieldset>
         </div>
         <fieldset class="form__fieldset form__fieldset--contacts-info">
           <legend class="form__legend form__legend--hidden">Контактная информация</legend>
-          <label class="form__lable form__lable--contacts-info form__lable--number"><span class="form__lable-sign">Номер телефона</span>
-            <input class="form__input input input--number" placeholder="Номер, пожалуйста" name="phone" type="tel">
+          <label class="form__lable form__lable--contacts-info"><span class="form__lable-sign">Номер телефона</span>
+            <div class="form__wrapper input--number-icon">
+              <input class="form__input input--number input" placeholder="Номер, пожалуйста" name="phone" type="tel">
+            </div>
           </label>
-          <label class="form__lable form__lable--contacts-info form__lable--mail"><span class="form__lable-sign">Адрес почты</span>
-            <input class="form__input input input--mail input--required" placeholder="Введите почту *" name="mail"
-              type="email">
+          <label class="form__lable form__lable--contacts-info"><span class="form__lable-sign">Адрес почты</span>
+            <div class="form__wrapper input--mail-icon">
+              <input class="form__input input input--mail input--required" placeholder="Введите почту *" name="mail"
+                type="email">
+            </div>
           </label>
         </fieldset>
         <!-- <div class="form__fildset-wrapper"> Для фона на всю ширину страницы -->
@@ -113,15 +121,15 @@
             <legend class="form__legend">С каким приложением
             путешествовали?</legend>
             <label class="form__lable form__lable--radio">
-              <input class="form__input-radio input-radio visually-hidden" checked name="os" value="ios" type="radio"><span class="form__radio-style"></span>Pink
+              <input class="form__input-radio input--radio visually-hidden" checked name="os" value="ios" type="radio"><span class="form__radio-style"></span>Pink
             для iOS
             </label>
             <label class="form__lable form__lable--radio">
-            <input class="form__input-radio input-radio visually-hidden" name="os" value="android" type="radio"><span class="form__radio-style"></span>Pink на
+            <input class="form__input-radio input--radio visually-hidden" name="os" value="android" type="radio"><span class="form__radio-style"></span>Pink на
             Android
             </label>
             <label class="form__lable form__lable--radio">
-              <input class="form__input-radio form__input-radio--last-child input-radio visually-hidden" name="os" value="windows" type="radio"><span class="form__radio-style"></span>Windows
+              <input class="form__input-radio form__input-radio--last-child input--radio visually-hidden" name="os" value="windows" type="radio"><span class="form__radio-style"></span>Windows
             Phone
             </label>
           </fieldset>
@@ -132,10 +140,10 @@
         </fieldset>
         <div class="form__button-container">
           <button class="form__button button button--form" type="submit">Отправить форму</button>
-          <b class="form-section__sign"><span class="form-section__sign-star">*</span> — обязательные  <span class="form-section__sign-desktop">для заполнения</span> поля</b>
+          <b class="form__sign"><span class="form__sign-star">*</span> — обязательные  <span class="form__sign-desktop">для заполнения</span> поля</b>
         </div>
       </form>
-    </section>
+    </div>
   </main>
   <footer class="site-footer">
     <section class="site-footer__logo logo logo--glasses">

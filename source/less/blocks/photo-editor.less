@@ -1,0 +1,308 @@
+// Графический редактор
+.photo-editor {
+}
+
+.photo-editor__form {
+
+}
+
+.editor {
+
+}
+
+.editor__title {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 52px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  font-weight: 400;
+}
+
+.editor__image {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+  object-fit: contain;
+}
+
+.editor__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 43px;
+  padding-bottom: 39px;
+  list-style: none;
+  background-color: #f2f2f2;
+}
+
+.editor__item {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.editor__button {
+
+  &--active {
+  }
+
+  &--crop {
+  }
+
+  &--fill {
+  }
+
+  &--contrast {
+  }
+}
+
+.editor__wrapper-range {
+  background-color: #f2f2f2;
+  padding-bottom: 34px;
+}
+
+.editor__range {
+}
+
+.range {
+  display: none;
+  margin: 0 auto;
+  height: 2px;
+  width: 240px;
+  position: relative;
+  background-color: #283645;
+
+  &--hidden {
+    display: block;
+  }
+}
+
+.range__toggle {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  bottom: 1px;
+  transform: translateY(50%);
+  background-color: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+
+  &--crop {
+  }
+
+  &--fill {
+  }
+
+  &--contrast {
+  }
+
+  &:active {
+    background-color: #d22856;
+  }
+}
+
+.editor__wrapper-button-form {
+  background-color: #f2f2f2;
+  padding: 0;
+  padding-top: 38px;
+  padding-bottom: 42px;
+  border-top: 1px solid #dedfe1;
+}
+
+.editor__button-form {
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+
+// Cтили графического редактора на планшет
+@media (min-width: @tablet-width) {
+  .editor {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 333px;
+    justify-content: center;
+    column-gap: 45px;
+    row-gap: 20px;
+    position: relative;
+    padding: 0 20px;
+    padding-top: 120px;
+    background-color: #f2f2f2;
+  }
+
+  .editor__title {
+    display: block;
+    position: absolute;
+    min-width: 100%;
+    margin-bottom: 0;
+    padding: 0 18%;
+    padding-bottom: 78px;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .editor__br-title {
+    display: none;
+  }
+
+  .editor__image {
+    width: 300px;
+    grid-row: 1/2;
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 54px;
+    background-color: #f2f2f2;
+  }
+
+  .editor__list {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-column: 2/3;
+    margin-bottom: 48px;
+    padding-top: 40px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .editor__item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    padding-left: 6px;
+    padding-right: 18px;
+    border-bottom: 1px solid #dedfe1;
+  }
+
+  .editor__button {
+
+    &--active {
+    }
+
+    &--crop {
+    }
+
+    &--fill {
+    }
+
+    &--contrast {
+    }
+  }
+
+  .editor__wrapper-range {
+    display: none;
+  }
+
+  .range {
+    width: 200px;
+    display: block;
+    margin: 0;
+    margin-left: auto;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  .editor__wrapper-button-form {
+    max-width: 300px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    grid-column: 2/3;
+    background-color: #f2f2f2;
+    padding: 0;
+    padding-right: 12px;
+    padding-bottom: 30px;
+    border-top: none;
+  }
+
+  .editor__button-form {
+    width: 260px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}
+
+// Cтили графического редактора на PC
+@media (min-width: @desktop_width) {
+  .editor {
+    grid-template-rows: 366px;
+    column-gap: 90px;
+    row-gap: 40px;
+  }
+
+  .editor__title {
+    padding: 0 30%;
+    padding-bottom: 74px;
+  }
+
+  .editor__image {
+    width: 380px;
+    padding-top: 60px;
+    padding-bottom: 54px;
+    padding-left: 80px;
+  }
+
+  .editor__list {
+    width: 410px;
+    margin-right: 60px;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    padding-left: 0;
+  }
+
+  .editor__item {
+    min-width: 410px;
+    padding-right: 30px;
+  }
+
+  .editor__button {
+
+    &--active {
+    }
+
+    &--crop {
+    }
+
+    &--fill {
+    }
+
+    &--contrast {
+    }
+  }
+
+  .range {
+    width: 288px;
+    display: block;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  .editor__wrapper-button-form {
+    max-width: 410px;
+    justify-content: space-between;
+    margin-right: 60px;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
+  .editor__button-form {
+    width: 184px;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}
