@@ -1,0 +1,90 @@
+.site-forms__title {
+  min-width: 100%;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 228px;
+  justify-content: center;
+  background-color: #1d2631;
+  background-image: url("../img/form-img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 0 12%;
+  padding-top: 95px;
+  padding-bottom: 84px;
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+@media (min-resolution: 2dppx) {
+  .site-forms__title {
+    background-image: url("../img/form-img/back-mobile@2x.jpg");
+  }
+}
+
+.site-forms__subtitle {
+  max-width: 280px;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  padding: 0;
+}
+
+.site-forms__subtitle-sign {
+  display: none;
+}
+
+// Cтили для планшета
+@media (min-width: @tablet-width) {
+  .site-forms__title {
+    grid-template-columns: 620px;
+    background-image: url("../img/form-img/back-tablet.jpg");
+    padding-top: 192px;
+    padding-bottom: 74px;
+    margin: 0;
+    margin-bottom: 100px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .site-forms__title {
+      background-image: url("../img/form-img/back-tablet@2x.jpg");
+    }
+  }
+
+  .site-forms__subtitle {
+    max-width: 490px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 82px;
+  }
+
+  .site-forms__subtitle-sign {
+    display: inline-block;
+  }
+}
+
+// Cтили для PC
+@media (min-width: @desktop_width) {
+  .site-forms__title {
+    grid-template-columns: 800px;
+    background-image: url("../img/form-img/back-desktop.jpg");
+    padding-top: 184px;
+    padding-bottom: 104px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .site-forms__title {
+      background-image: url("../img/form-img/back-desktop@2x.jpg");
+    }
+  }
+
+  .site-forms__subtitle {
+    max-width: 760px;
+    margin-bottom: 84px;
+  }
+}
