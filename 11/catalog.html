@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="./catalog.html">
+  <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog PINK</title>
+  <base href="https://htmlacademy-adaptive.github.io/1554631-pink-25/11/">
+</head>
+
+<body>
+  <header class="site-header site-header--no-js">
+    <nav class="site-header__navigation">
+      <div class="site-header__logo logo">
+        <a class="logo__link" href="index.html">
+          <svg class="logo__icon logo__icon--mobile" width="74" height="23">
+            <use  href="img/sprite.svg#pink-logo"></use>
+          </svg>
+          <svg class="logo__icon logo__icon--tablet" width="145" height="40">
+            <use href="img/sprite.svg#pink-logo-tablet"></use>
+          </svg>
+          <svg class="logo__icon logo__icon--desktop" width="147" height="40">
+            <use href="img/sprite.svg#pink-logo-desktop"></use>
+          </svg>
+          <span class="visually-hidden">Логотип приложения PINK.</span>
+        </a>
+      </div>
+      <div class="site-header__menu menu  menu--opened">
+        <button class="menu__toggle"  type="button"> <span class="visually-hidden">Открыть меню.</span></button>
+        <ul class="menu__list">
+          <li class="menu__item menu__item--first-child">
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="menu__item menu__item--last-child">
+            <a class="menu__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="site-catalog">
+    <h1 class="visually-hidden">Каталог сайта PINK.</h1>
+    <section class="site-catalog__photo-gallery">
+      <h2 class="site-catalog__title title-second">Фотографии <br>
+        пользователей</h2>
+      <p class="site-catalog__sub-title">Взгляните на фотографии, которые выкладывают пользователи! <br class="site-catalog__br-sub-title">
+        Видите, как не хватает ваших?</p>
+      <ul class="site-catalog__list cards-list">
+        <li class="cards-list__item cards-list__item--panorama">
+          <picture>
+            <source media="(min-width: 1080px)" srcset="./img/catalog-img/panorama-desktop.jpg 1x, ./img/catalog-img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/panorama-tablet.jpg 1x, ./img/catalog-img/panorama-tablet@2x.jpg 2x">
+            <img class="cards-list__image cards-list__image--panorama" src="./img/catalog-img/panorama-mobile.jpg" alt="" srcset="./img/catalog-img/panorama-mobile@2x.jpg 2x">
+          </picture>
+          <h3 class="cards-list__title">Анна
+            <span class="cards-list__comment-time">(5 минут назад)</span>
+          </h3>
+          <p class="cards-list__comment cards-list__comment--panorama">Прыгать или нет? Напишите в
+            комментарии свой совет и <br class="cards-list__br-comment">
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <button class="cards-list__favorites cards-list__favorites--panorama" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites cards-list__value-favorites--panorama" disabled type="number" value="215">
+            </button>
+        </li>
+        <li class="cards-list__item">
+          <picture>
+            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-1-desktop.jpg 1x, ./img/catalog-img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-1-tablet.jpg 1x, ./img/catalog-img/photo-1-tablet@2x.jpg 2x">
+            <img class="cards-list__image" src="./img/catalog-img/photo-1-mobile.jpg" alt="камера снимающая белую иномарку." srcset="./img/catalog-img/photo-1-mobile@2x.jpg 2x">
+          </picture>
+          <h3 class="cards-list__title">Левон
+            <span class="cards-list__comment-time">(5 часов назад)</span>
+          </h3>
+          <p class="cards-list__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="356">
+            </button>
+        </li>
+        <li class="cards-list__item">
+          <picture>
+            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-2-desktop.jpg 1x, ./img/catalog-img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-2-tablet.jpg 1x, ./img/catalog-img/photo-2-tablet@2x.jpg 2x">
+            <img class="cards-list__image" src="./img/catalog-img/photo-2-mobile.jpg" alt="барабаны." srcset="./img/catalog-img/photo-2-mobile@2x.jpg 2x">
+          </picture>
+          <h3 class="cards-list__title">Антон
+            <span class="cards-list__comment-time">(12 часов назад)</span>
+          </h3>
+          <p class="cards-list__comment">Соседи будут рады!</p>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="666">
+            </button>
+        </li>
+        <li class="cards-list__item">
+          <picture>
+            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-3-desktop.jpg 1x, ./img/catalog-img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-3-tablet.jpg 1x, ./img/catalog-img/photo-3-tablet@2x.jpg 2x">
+            <img class="cards-list__image" src="./img/catalog-img/photo-3-mobile.jpg" alt="стеклянный небоскрёб" srcset="./img/catalog-img/photo-3-mobile@2x.jpg 2x">
+          </picture>
+          <h3 class="cards-list__title">Борис
+            <span class="cards-list__comment-time">(12 часов назад)</span>
+          </h3>
+          <p class="cards-list__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="215">
+            </button>
+        </li>
+        <li class="cards-list__item">
+          <picture>
+            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-4-desktop.jpg 1x, ./img/catalog-img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-4-tablet.jpg 1x, ./img/catalog-img/photo-4-tablet@2x.jpg 2x">
+            <img class="cards-list__image" src="./img/catalog-img/photo-4-mobile.jpg" alt="кубанская бахча" srcset="./img/catalog-img/photo-4-mobile@2x.jpg 2x">
+          </picture>
+          <h3 class="cards-list__title">Сергей
+            <span class="cards-list__comment-time">(25 часов назад)</span>
+          </h3>
+          <p class="cards-list__comment">Самая кубанская в мире!</p>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="4">
+            </button>
+        </li>
+        <li class="cards-list__item">
+          <picture>
+            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-5-desktop.jpg 1x, ./img/catalog-img/photo-5-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-5-tablet.jpg 1x, ./img/catalog-img/photo-5-tablet@2x.jpg 2x">
+            <img class="cards-list__image" src="./img/catalog-img/photo-5-mobile.jpg" alt="фото с вершины горы" srcset="./img/catalog-img/photo-5-mobile@2x.jpg 2x">
+          </picture>
+          <h3 class="cards-list__title">Максим
+            <span class="cards-list__comment-time">(40 часов назад)</span>
+          </h3>
+          <p class="cards-list__comment">Где снег-то?</p>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="150">
+            </button>
+        </li>
+        <li class="cards-list__item">
+          <picture>
+            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-6-desktop.jpg 1x, ./img/catalog-img/photo-6-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-6-tablet.jpg 1x, ./img/catalog-img/photo-6-tablet@2x.jpg 2x">
+            <img class="cards-list__image" src="./img/catalog-img/photo-6-mobile.jpg" alt="крыло самолета на закате" srcset="./img/catalog-img/photo-6-mobile@2x.jpg 2x">
+          </picture>
+          <h3 class="cards-list__title">Надежда
+            <span class="cards-list__comment-time">(45 часов назад)</span>
+          </h3>
+          <p class="cards-list__comment">Всем GM и взаимные лайки!</p>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="2560">
+            </button>
+        </li>
+      </ul>
+    </section>
+    <section class="site-catalog__photo-editor photo-editor">
+      <h2 class="visually-hidden">Редактор фотографий</h2>
+      <span class="photo-editor__subtitle">Затмите их всех!</br>
+        Выкладывайте все, что накопилось в <br class="photo-editor__br-title">телефоне!</span>
+      <form class="photo-editor__form" action="https://echo.htmlacademy.ru/" method="post"
+        enctype="multipart/form-data">
+        <picture>
+          <source media="(min-width: 660px)" srcset="./img/catalog-img/photo-editor-tablet.jpg 1x, ./img/catalog-img/photo-editor-tablet@2x.jpg 2x">
+          <img class="photo-editor__image" src="./img/catalog-img/photo-editor-mobile.jpg" alt="зимний пейзаж - дорога проходящая через лес на рассвете" srcset="./img/catalog-img/photo-editor-mobile@2x.jpg 2x">
+        </picture>
+        <ul class="photo-editor__list">
+          <li class="photo-editor__item">
+            <button class="photo-editor__button photo-editor__button--active" type="button">
+              <svg class="photo-editor__button-icon photo-editor__button-icon--crop" width="44" height="44">
+                <use href="img/sprite.svg#photo-editor-crop"></use>
+              </svg>
+              <span
+                class="visually-hidden">Сделать кроп фотографии.</span>
+              </button>
+            <div class="photo-editor__range range">
+              <button class="range__toggle range__toggle--crop" type="button" style="left: 160px;"></button>
+            </div>
+          </li>
+          <li class="photo-editor__item">
+            <button class="photo-editor__button" type="button">
+              <svg class="photo-editor__button-icon photo-editor__button-icon--fill" width="48" height="43">
+                <use href="img/sprite.svg#photo-editor-fill"></use>
+              </svg>
+              <span class="visually-hidden">
+                Сделать
+                заливку фотографии.
+              </span>
+              </button>
+            <div class="photo-editor__range range">
+              <button class="range__toggle range__toggle--fill" type="button" style="left: 25px;"></button>
+            </div>
+          </li>
+          <li class="photo-editor__item photo-editor__item--last-child">
+            <button class="photo-editor__button" type="button">
+              <svg class="photo-editor__button-icon photo-editor__button-icon--contrast" width="32" height="32">
+                <use href="img/sprite.svg#photo-editor-contrast"></use>
+              </svg>
+              <span class="visually-hidden">Поменять
+                контрастность фотографии.
+              </span>
+              </button>
+            <div class="photo-editor__range range">
+              <button class="range__toggle range__toggle--contrast" type="button" style="left: 96px;"></button>
+            </div>
+          </li>
+        </ul>
+        <div class="photo-editor__wrapper-range">
+          <div class="photo-editor__range range range--hidden">
+            <button class="range__toggle" type="button" style="left: 193px;"></button>
+          </div>
+        </div>
+        <div class="photo-editor__wrapper-button-form">
+          <button class="photo-editor__button-form photo-editor__button-form--first button button--second" type="submit">Запостить</button>
+          <button class="photo-editor__button-form photo-editor__button-form--last button button--third" type="reset">Отмена</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <section class="site-footer__logo logo">
+      <h2 class="visually-hidden">Логотип приложения PINK.</h2>
+      <a class="logo__link logo__link--footer" href="index.html">
+        <svg class="logo__icon logo__icon--mobile-tablet" width="145" height="40">
+          <use href="img/sprite.svg#pink-logo-footer"></use>
+        </svg>
+        <svg class="logo__icon logo__icon--desktop" width="147" height="40">
+          <use href="img/sprite.svg#pink-logo-footer-desktop"></use>
+        </svg>
+      </a>
+    </section>
+    <section class="site-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+            <img src="img/index-img/svg/vk.svg" alt="VK.">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="tg://resolve?domain=htmlacademy" target="_blank">
+            <img src="img/index-img/svg/telegram.svg" alt="telegram.">
+          </a>
+        </li>
+        <li class="social__item social__item--nth-last-child">
+          <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS" target="_blank">
+            <img src="img/index-img/svg/youtube.svg" alt="YouTube.">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="site-footer__logo-developer logo-developer">
+      <h2 class="visually-hidden">Логотип компании-разработчка - HTML Academy</h2>
+      <a class="logo-developer__link" href="https://htmlacademy.ru/" target="_blank">Разработано
+        <svg class="logo-developer__icon" width="27" height="34">
+          <use href="img/sprite.svg#logo-html-academy"></use>
+        </svg>
+      </a>
+    </section>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
