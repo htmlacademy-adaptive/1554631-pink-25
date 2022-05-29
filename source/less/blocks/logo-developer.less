@@ -1,0 +1,49 @@
+.logo-developer {
+  min-width: 130px;
+  max-width: 280px;
+  margin-bottom: 10px;
+}
+
+.logo-developer__link {
+  display: grid;
+  grid-template-columns: auto 44px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+}
+
+.logo-developer__icon {
+  fill: inherit;
+  margin-left: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .logo-developer {
+    max-width: 180px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .logo-developer {
+    font-size: 18px;
+    max-width: 260px;
+  }
+
+  .logo-developer__link {
+    font-size: 18px;
+  }
+}

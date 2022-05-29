@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   align-items: center;
-  min-height: 68px;
+  min-height: 66px;
   margin-left: auto;
 
   &--close {
@@ -36,6 +36,10 @@
   &--opened {
     & .menu__list {
       display: block;
+    }
+
+    & .menu__toggle {
+      padding-top: 32px;
     }
 
     & .menu__toggle::before {
@@ -148,6 +152,11 @@
       padding: 55px;
     }
   }
+
+  .menu__link {
+    padding-bottom: 11px;
+    padding-top: 9px;
+  }
 }
 
 // Стили для ПК
@@ -188,7 +197,7 @@
     display: flex;
     justify-content: center;
     margin: 0;
-    margin-right: 78px;
+    margin-right: 80px;
     padding: 0;
     border-top: none;
     border-bottom: none;
@@ -204,6 +213,7 @@
   }
 
   .menu__link {
+    max-width: 140px;
     display: flex;
     position: relative;
     font-weight: 400;

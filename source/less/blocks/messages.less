@@ -1,5 +1,6 @@
 .message-form {
   display: none;
+  flex-direction: column;
   max-width: 320px;
   position: fixed;
   top: 50%;
@@ -9,16 +10,22 @@
   padding-top: 44px;
   background-color: #ffffff;
   color: #000000;
-  box-shadow: 0 8px 12px 0 #E1E1E1;
+  box-shadow: 0 8px 12px 0 #e1e1e1;
   z-index: 3;
 
   &--error {
-    padding-bottom: 52px;
+    width: 320px;
+    padding: 0;
+    padding-bottom: 0;
+    padding-top: 38px;
+    transform: translateY(-58%) translateX(-50%);
   }
 
   &--valid {
-    padding: 0 22px;
-    padding-top: 44px;
+    width: 320px;
+    min-height: 380px;
+    padding: 0;
+    padding-top: 56px;
   }
 
   &--open {
@@ -28,8 +35,8 @@
 
 .message-form__title {
   margin: 0;
-  margin-bottom: 37px;
-  padding: 0;
+  margin-bottom: 28px;
+  padding: 0 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -37,44 +44,57 @@
 }
 
 .message-form__description {
+  width: 100%;
   margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
+  margin-bottom: 34px;
+  padding: 0 20px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
   text-align: center;
 
   &--error {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 }
 
 .message-form__wrapper-button {
   display: block;
-  max-width: 276px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 52px 0;
+  padding: 48px 20px;
+  padding-bottom: 49px;
   background-color: #f2f2f2;
+
+  &--error {
+    background-color: #ffffff;
+    padding: 38px 20px;
+    padding-bottom: 50px;
+  }
 }
 
 // Cтили для планшета
 @media (min-width: @tablet-width) {
   .message-form {
+    transform: translateY(-50%) translateX(-50%);
     align-items: center;
     flex-direction: column;
     min-width: 460px;
     max-width: 500px;
     padding: 0;
     padding-top: 50px;
+    border-radius: 5px;
 
     &--error {
+      transform: translateY(-40%) translateX(-50%);
       padding-bottom: 52px;
+      padding-top: 54px;
     }
 
     &--valid {
       padding: 0;
-      padding-top: 50px;
+      padding-top: 52px;
+      padding-bottom: 0;
     }
   }
 
@@ -82,6 +102,7 @@
     max-width: 390px;
     font-size: 30px;
     line-height: 40px;
+    margin-bottom: 22px;
 
     &--error {
       max-width: 260px;
@@ -91,12 +112,12 @@
   .message-form__description {
     max-width: 360px;
     display: inline-block;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     padding: 0 20px;
     font-size: 18px;
 
     &--error {
-      margin-bottom: 40px;
+      margin-bottom: 36px;
     }
   }
 
@@ -108,7 +129,11 @@
     display: flex;
     justify-content: center;
     min-width: 460px;
-    padding: 52px 20px;
+    padding: 50px 20px;
+
+    &--error {
+      padding: 0;
+    }
   }
 }
 
@@ -117,14 +142,18 @@
   .message-form {
     min-width: 780px;
     max-width: 780px;
+    min-height: 370px;
+    transform: translateY(-62%) translateX(-50%);
+    padding-top: 38px;
 
     &--error {
+      transform: translateY(-51%) translateX(-50%);
       padding-bottom: 0;
     }
   }
 
   .message-form__title {
-    max-width: 396px;
+    max-width: 436px;
 
     &--error {
       max-width: 396px;
@@ -133,7 +162,7 @@
 
   .message-form__description {
     max-width: 420px;
-    margin-bottom: 44px;
+    margin-bottom: 40px;
 
     &--error {
       margin-bottom: 68px;
@@ -146,6 +175,12 @@
 
   .message-form__wrapper-button {
     min-width: 100%;
+    padding: 52px;
+    padding-top: 50px;
+
+    &--error {
+      padding-top: 46px;
+    }
   }
 }
 

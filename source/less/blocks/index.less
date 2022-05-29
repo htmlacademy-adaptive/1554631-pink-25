@@ -1,21 +1,34 @@
 // Интро сайта.
 .site-index__intro {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 42px;
   padding: 0;
   color: #ffffff;
   background-color: #1d2631;
 }
+
+@media (min-width: @tablet-width) {
+  .site-index__intro {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .site-index__intro {
+    margin-bottom: 63px;
+  }
+}
+
 // !Exit интро.
 
 // Секция преимуществ
 .site-index__advantages {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 @media (min-width: @tablet-width) {
   .site-index__advantages {
-    margin-bottom: 109px;
+    margin-bottom: 98px;
   }
 }
 
@@ -26,14 +39,33 @@
 }
 // !Exit ПРЕИМУЩЕСТВА
 
+// Комментарии
+.site-index__reviews {
+  margin-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .site-index__reviews {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .site-index__reviews {
+    margin-bottom: 0;
+  }
+}
+
+// ! Exit Комментарии
+
 // Цены на тарифы
 .site-index__price {
-  margin-bottom: 48px;
+  margin-bottom: 42px;
 }
 
 @media (min-width: @desktop_width) {
   .site-index__price {
-    margin-bottom: 74px;
+    margin-bottom: 64px;
   }
 }
 // !Exit price

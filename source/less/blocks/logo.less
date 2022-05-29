@@ -1,12 +1,97 @@
-.logo {
-}
-
 .logo__link {
+  display: block;
   width: 74px;
-  height: 24px;
+  height: 66px;
+  padding: 20px 0;
+  padding-top: 23px;
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  &--footer {
+    width: 145px;
+    min-height: 40px;
+    max-height: 40px;
+    padding: 0;
+    fill: rgb(40, 54, 69);
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill: rgb(40, 54, 69);
+      opacity: 0.3;
+    }
+  }
 }
 
 .logo__icon {
-  fill: #ffffff;
+  line-height: 0;
+  fill: inherit;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
+// Стили для планшета
+
+@media (min-width: @tablet-width) {
+  .logo__link {
+    width: 145px;
+    min-height: 110px;
+    padding: 28px 0;
+
+    &--footer {
+      min-height: 40px;
+      max-height: 40px;
+      padding: 0;
+    }
+  }
+
+  .logo__icon {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: inline-block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+// Стили для ПК
+@media (min-width: @desktop_width) {
+  .logo__icon {
+    &--mobile-tablet {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline-block;
+    }
+  }
+}
