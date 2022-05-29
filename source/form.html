@@ -18,7 +18,15 @@
     <nav class="site-header__navigation">
       <div class="site-header__logo logo">
         <a class="logo__link" href="index.html">
-          <svg class="logo__icon" width="74" height="23" viewBox="0 0 74 23" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5A1.3 1.3 0 011.3.3h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3H2.5v6.8A1.3 1.3 0 011.3 23 1.3 1.3 0 010 21.6v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9H2.7v9.9H8zM21.6 1.4A1.3 1.3 0 0122.9 0 1.3 1.3 0 0124 1.4v20.2A1.3 1.3 0 0123 23a1.3 1.3 0 01-1.3-1.4V1.4zM30.7 1.4A1.3 1.3 0 0131.9.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17A1.2 1.2 0 0148.4.2a1.2 1.2 0 011.2 1.3v20.3a1.1 1.1 0 01-1.1 1.1h-.2A1.7 1.7 0 0147 22L33.1 4.2v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V1.4zM56 1.4A1.3 1.3 0 0157.1 0a1.3 1.3 0 011.3 1.4v12.3L71.2.6c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-1.3 1.2 1.2 1.2 0 01-1-.6L63.3 12l-4.8 4.8v4.9a1.3 1.3 0 01-1.3 1.3 1.3 1.3 0 01-1.3-1.3V1.4z"/></svg>
+          <svg class="logo__icon logo__icon--mobile" width="74" height="23">
+            <use  href="img/sprite.svg#pink-logo"></use>
+          </svg>
+          <svg class="logo__icon logo__icon--tablet" width="145" height="40">
+            <use href="img/sprite.svg#pink-logo-tablet"></use>
+          </svg>
+          <svg class="logo__icon logo__icon--desktop" width="147" height="40">
+            <use href="img/sprite.svg#pink-logo-desktop"></use>
+          </svg>
           <span class="visually-hidden">Логотип приложения PINK.</span>
         </a>
       </div>
@@ -64,7 +72,7 @@
             <input class="form__input form__input--perosal-data input input--required input--family" placeholder="Укажите фамилию *" name="family" type="text">
           </label>
           <label class="form__lable form__lable--personal-data"> <span class="form__lable-sign">Имя:</span>
-            <input class="form__input form__input--perosal-data input input--required input--name" placeholder="Введите ваше имя  *" name="name" type="text">
+            <input class="form__input form__input--perosal-data input input--required input--name" placeholder="Введите ваше имя *" name="name" type="text">
           </label>
           <label class="form__lable form__lable--personal-data"> <span class="form__lable-sign">Отчество:</span>
             <input class="form__input form__input--perosal-data input input--family" placeholder="Ну и отчество тоже" name="patronymic" type="text">
@@ -76,7 +84,7 @@
             <legend class="form__legend">Ваши безбашенные <br class="form__legend-br">
             достижения в путешествии</legend>
             <label class="form__lable form__lable--nth-child1 form__lable--checked">
-              <input class="form__input-checkbox input-checkbox visually-hidden" checked name="selfie_with_a_shark" value="yes"
+              <input class="form__input-checkbox input--checkbox visually-hidden" checked name="selfie_with_a_shark" value="yes"
               type="checkbox"><span class="form__checkbox-style"></span>Сделал селфи с акулой
             </label>
             <label class="form__lable  form__lable--nth-child4 form__lable--checked">
@@ -91,11 +99,11 @@
               <input class="form__input-checkbox input--checkbox visually-hidden" name="souvenirs" value="yes" type="checkbox"><span class="form__checkbox-style"></span>Накупил
             сувениров
             </label>
-            <label class="form__lable form__lable--nth-child3n  form__lable--nth-child3 form__lable--checked">
+            <label class="form__lable form__lable--nth-child3 form__lable--checked">
               <input class="form__input-checkbox input--checkbox visually-hidden" checked name="held_tower" value="yes"
               type="checkbox"><span class="form__checkbox-style"></span>Удержал башню
             </label>
-            <label class="form__lable form__lable--nth-child3n  form__lable--nth-child6 form__lable--checked">
+            <label class="form__lable form__lable--nth-child6 form__lable--checked">
               <input class="form__input-checkbox input--checkbox  visually-hidden" name="trashed_hotel" value="yes"
               type="checkbox"><span class="form__checkbox-style"></span>Разгромил отель
             </label>
@@ -103,12 +111,12 @@
         </div>
         <fieldset class="form__fieldset form__fieldset--contacts-info">
           <legend class="form__legend form__legend--hidden">Контактная информация</legend>
-          <label class="form__lable form__lable--contacts-info"><span class="form__lable-sign">Номер телефона</span>
+          <label class="form__lable form__lable--contacts-info"><span class="form__lable-sign form__lable-sign--contacts-info">Номер телефона</span>
             <div class="form__wrapper input--number-icon">
               <input class="form__input input--number input" placeholder="Номер, пожалуйста" name="phone" type="tel">
             </div>
           </label>
-          <label class="form__lable form__lable--contacts-info"><span class="form__lable-sign">Адрес почты</span>
+          <label class="form__lable form__lable--contacts-info"><span class="form__lable-sign form__lable-sign--contacts-info">Адрес почты</span>
             <div class="form__wrapper input--mail-icon">
               <input class="form__input input input--mail input--required" placeholder="Введите почту *" name="mail"
                 type="email">
@@ -118,7 +126,7 @@
         <!-- <div class="form__fildset-wrapper"> Для фона на всю ширину страницы -->
         <div class="form__fildset-wrapper form__fildset-wrapper--apps">
           <fieldset class="form__fieldset form__fieldset--apps">
-            <legend class="form__legend">С каким приложением
+            <legend class="form__legend form__legend--apps">С каким приложением
             путешествовали?</legend>
             <label class="form__lable form__lable--radio">
               <input class="form__input-radio input--radio visually-hidden" checked name="os" value="ios" type="radio"><span class="form__radio-style"></span>Pink
@@ -146,36 +154,52 @@
     </div>
   </main>
   <footer class="site-footer">
-    <section class="site-footer__logo logo logo--glasses">
+    <section class="site-footer__logo logo">
       <h2 class="visually-hidden">Логотип приложения PINK.</h2>
-      <a class="logo__link" href="#">
-
+      <a class="logo__link logo__link--footer" href="index.html">
+        <svg class="logo__icon logo__icon--mobile-tablet" width="145" height="40">
+          <use href="img/sprite.svg#pink-logo-footer"></use>
+        </svg>
+        <svg class="logo__icon logo__icon--desktop" width="147" height="40">
+          <use href="img/sprite.svg#pink-logo-footer-desktop"></use>
+        </svg>
       </a>
     </section>
-    <section class="social">
+    <section class="site-footer__social social">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social__list social-items">
-        <li class="social-items__item">
-          <a class="social-item__link" href=""><span class="visually-hidden">VK.</span></a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+            <img src="img/index-img/svg/vk.svg" alt="VK.">
+          </a>
         </li>
-        <li class="social-items__item">
-          <a class="social-item__link" href=""><span class="visually-hidden">Twitter.</span></a>
+        <li class="social__item">
+          <a class="social__link" href="tg://resolve?domain=htmlacademy" target="_blank">
+            <img src="img/index-img/svg/telegram.svg" alt="telegram.">
+          </a>
         </li>
-        <li class="social-items__item">
-          <a class="social-item__link" href=""><span class="visually-hidden">YouTube.</span></a>
+        <li class="social__item social__item--nth-last-child">
+          <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS" target="_blank">
+            <img src="img/index-img/svg/youtube.svg" alt="YouTube.">
+          </a>
         </li>
       </ul>
     </section>
-    <section class="logo-developer">
-      <h2 class="visually-hidden">Логотип компании-разработчка</h2>
-      <a class="logo-developer__link" href=""> <span class="logo-developer__sign">Разработано</span></a>
+    <section class="site-footer__logo-developer logo-developer">
+      <h2 class="visually-hidden">Логотип компании-разработчка - HTML Academy</h2>
+      <a class="logo-developer__link" href="https://htmlacademy.ru/" target="_blank">Разработано
+        <svg class="logo-developer__icon" width="27" height="34">
+          <use href="img/sprite.svg#logo-html-academy"></use>
+        </svg>
+      </a>
     </section>
   </footer>
+  <!-- Модальные сообщения -->
   <div class="message-form message-form--error">
     <h1 class="message-form__title message-form__title--error">Что-то пошло не так!</h1>
     <p class="message-form__description message-form__description--error">Проверьте поля, выделенные красным,
       скорее всего вы забыли их заполнить</p>
-    <div class="message-form__wrapper-button">
+    <div class="message-form__wrapper-button message-form__wrapper-button--error">
       <button class="button button--form" type="button">ОК</button>
     </div>
   </div>
@@ -186,7 +210,7 @@
       время мы рассмотрим ее и <br class="message-form__br-description">
       оповестим вас.</p>
     <div class="message-form__wrapper-button">
-      <button class="button button--form" type="button">ЗАКРЫТЬ ОКНО</button>
+      <button class="button button--form button--form-valid" type="button">ЗАКРЫТЬ ОКНО</button>
     </div>
   </div>
   <script src="./js/script.js"></script>

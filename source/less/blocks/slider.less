@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 
 .slider__table {
@@ -18,15 +19,10 @@
   flex-direction: column;
   background-color: #ffffff;
 
-  &--second {
+  &--first {
     display: none;
     border-top: 2px solid #e5e5e5;
     align-self: flex-end;
-  }
-
-  &--active {
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -48,8 +44,12 @@
   border-radius: 50%;
   padding: 0;
   margin: 0;
-  margin-right: 20px;
+  margin-right: 19px;
   cursor: pointer;
+
+  &--arrow {
+    display: none;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -70,9 +70,9 @@
   }
 
   &--current {
-    width: 12px;
-    height: 12px;
-    border: 3px solid #283645;
+    width: 6px;
+    height: 6px;
+    outline: 3px solid #283645;
     background-color: #ffffff;
 
     &:hover {
@@ -100,28 +100,70 @@
   .slider__column {
     display: flex;
 
-    &--second {
+    &--first {
       display: flex;
       border-top: 2px solid #e5e5e5;
+      border-left: 2px solid #e5e5e5;
       align-self: flex-end;
+    }
+
+    &--active {
+      order: 0;
     }
   }
 }
 
 @media (min-width: @desktop_width) {
   .slider__column {
-    width: 234px;
+    width: 236px;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
 
-    &--second {
+    &--first {
       border-top: 2px solid #e5e5e5;
       align-self: flex-end;
     }
+  }
 
-    &--hidden {
-      display: flex;
+  .slider__toggle {
+    display: none;
+
+    &--arrow {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-65%);
+      display: block;
+      width: 22px;
+      height: 102px;
+      padding: 30px 0;
+      background-color: transparent;
+      border-radius: 0%;
+      fill: rgba(40, 54, 69, 0.3);
+
+      &:hover {
+        fill: rgba(40, 54, 69, 1);
+        background-color: transparent;
+        border-radius: 0%;
+      }
+
+      &:active {
+        fill: rgba(40, 54, 69, 0.1);
+        background-color: transparent;
+        border-radius: 0%;
+      }
     }
+
+    &--arrow-left {
+      left: 0;
+      transform: translateY(-65%) rotate(-180deg);
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+
+  .slider__toggle-icon {
+    fill: inherit;
   }
 }

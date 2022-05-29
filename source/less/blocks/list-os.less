@@ -1,81 +1,35 @@
 .list-os {
-  max-width: 204px;
-  justify-content: space-between;
+  max-width: 211px;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
   flex-wrap: wrap;
   list-style: none;
+  position: relative;
+  left: 3px;
   padding: 0;
 }
 
 .list-os__item {
   padding: 0;
   margin: 0;
+  margin-right: 35px;
+  margin-bottom: 10px;
 
-  .list-os__item--apple {
+  &:nth-child(3n) {
+    margin-right: 0;
   }
-
-  .list-os__item--android {
-  }
-
-  .list-os__item--windows {
-  }
-}
-
-.list-os__icon {
 }
 
 @media (min-width: @tablet-width) {
   .list-os {
-    max-width: 204px;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-  }
-
-  .list-os__item {
-    padding: 0;
-    margin: 0;
-
-    .list-os__item--apple {
-    }
-
-    .list-os__item--android {
-    }
-
-    .list-os__item--windows {
-    }
-  }
-
-  .list-os__icon {
+    align-items: center;
   }
 }
 
 @media (min-width: @desktop_width) {
   .list-os {
-    max-width: 204px;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-  }
-
-  .list-os__item {
-    padding: 0;
-    margin: 0;
-
-    .list-os__item--apple {
-    }
-
-    .list-os__item--android {
-    }
-
-    .list-os__item--windows {
-    }
-  }
-
-  .list-os__icon {
+    align-items: center;
+    left: 1px;
   }
 }

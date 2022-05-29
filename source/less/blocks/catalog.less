@@ -1,8 +1,5 @@
 // Галерея фотографий
-.photo-gallery {
-}
-
-.photo-gallery__title {
+.site-catalog__title {
   color: #ffffff;
   display: block;
   background-color: #1d2631;
@@ -12,93 +9,108 @@
   background-position: center;
   padding: 0 12%;
   padding-top: 95px;
-  padding-bottom: 84px;
+  padding-bottom: 76px;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 44px;
+  line-height: 33px;
 }
 
 @media (min-resolution: 2dppx) {
-  .photo-gallery__title {
+  .site-catalog__title {
     background-image: url("../img/catalog-img/gallery-bg@2x.jpg");
   }
 }
 
-.photo-gallery__sub-title {
+.site-catalog__sub-title {
   max-width: 280px;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: #283645;
 }
 
-.photo-gallery__list {
+.site-catalog__list {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
 }
 
 //  Cтили галереи фотографий на планшет
 @media (min-width: @tablet-width) {
-  .photo-gallery__title {
+  .site-catalog__title {
     min-width: 100%;
     background-image: url("../img/catalog-img/gallery-bg-tablet.jpg");
     background-size: contain;
-    padding: 0 20px;
-    padding-top: 192px;
-    padding-bottom: 146px;
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 91px;
+    padding: 0 20px;
+    padding-top: 176px;
+    padding-bottom: 128px;
+    font-size: 50px;
+    line-height: 68px;
   }
 
   @media (min-resolution: 2dppx) {
-    .photo-gallery__title {
+    .site-catalog__title {
       background-image: url("../img/catalog-img/gallery-bg-tablet@2x.jpg");
     }
   }
 
-  .photo-gallery__sub-title {
+  .site-catalog__sub-title {
     max-width: 500px;
     font-size: 18px;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 85px;
+    margin-bottom: 77px;
   }
 
-  .photo-gallery__br-sub-title {
+  .site-catalog__br-sub-title {
     display: none;
   }
 
-  .photo-gallery__list {
-    margin-bottom: 74px;
+  .site-catalog__list {
+    margin-bottom: 62px;
   }
 }
 
 //  Cтили галереи фотографий на PC
 @media (min-width: @desktop_width) {
-  .photo-gallery__title {
+  .site-catalog__photo-gallery {
+    overflow: hidden;
+  }
+
+  .site-catalog__title {
     background-image: url("../img/catalog-img/gallery-bg-desktop.jpg");
-    padding-top: 184px;
-    padding-bottom: 104px;
+    padding-top: 170px;
+    padding-bottom: 88px;
   }
 
   @media (min-resolution: 2dppx) {
-    .photo-gallery__title {
+    .site-catalog__title {
       background-image: url("../img/catalog-img/gallery-bg-desktop@2x.jpg");
     }
   }
 
-  .photo-gallery__sub-title {
+  .site-catalog__sub-title {
     max-width: 572px;
-    margin-bottom: 97px;
+    margin-bottom: 89px;
   }
 
-  .photo-gallery__br-sub-title {
+  .site-catalog__br-sub-title {
     display: block;
   }
 
-  .photo-gallery__list {
-    margin-bottom: 68px;
+  .site-catalog__list {
+    margin-bottom: 60px;
+  }
+}
+// !Gallery EXIT
+
+// Cтили фоторедактора
+@media (min-width: @desktop_width) {
+  .site-catalog__photo-editor {
+    margin-bottom: 31px;
   }
 }

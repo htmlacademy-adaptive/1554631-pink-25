@@ -10,15 +10,12 @@
     padding: 0 20px;
   }
 
-  .effect__image {
-    min-width: 310px;
-  }
-
   .effect__text {
     position: relative;
     max-width: 310px;
     margin-left: auto;
-    margin-top: 48px;
+    margin-right: 22px;
+    margin-top: 42px;
 
     &::before {
       content: "";
@@ -45,7 +42,7 @@
   .effect__title {
     max-width: 168px;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     padding: 0;
     font-weight: 700;
     font-size: 30px;
@@ -57,16 +54,19 @@
   .effect__description {
     max-width: 308px;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     padding: 0;
     font-size: 14px;
     line-height: 24px;
     text-align: left;
-    word-spacing: 4px;
   }
 
   .effect__br-description {
     display: none;
+
+    &--tablet {
+      display: block;
+    }
   }
 
   .effect__link {
@@ -87,21 +87,21 @@
     justify-content: center;
     background-color: #f2f2f2;
     padding: 0 20px;
-    padding-bottom: 68px;
+    padding-bottom: 86px;
   }
 
 
   .effect__text {
     max-width: 580px;
     margin-left: auto;
-    margin-top: 100px;
-    padding-right: 40px;
+    margin-top: 92px;
+    padding-right: 12px;
     position: relative;
 
     &::before {
       content: "";
       position: absolute;
-      top: -100px;
+      top: -90px;
       left: -370px;
       width: 298px;
       height: 345px;
@@ -138,7 +138,7 @@
   .effect__description {
     min-width: 534px;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     padding: 0;
     font-size: 18px;
     line-height: 30px;
@@ -148,6 +148,10 @@
 
   .effect__br-description {
     display: block;
+
+    &--tablet {
+      display: none;
+    }
   }
 
   .effect__link {

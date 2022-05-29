@@ -18,7 +18,15 @@
     <nav class="site-header__navigation">
       <div class="site-header__logo logo">
         <a class="logo__link" href="index.html">
-          <svg class="logo__icon" width="74" height="23" viewBox="0 0 74 23" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M0 1.5A1.3 1.3 0 011.3.3h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3H2.5v6.8A1.3 1.3 0 011.3 23 1.3 1.3 0 010 21.6v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9H2.7v9.9H8zM21.6 1.4A1.3 1.3 0 0122.9 0 1.3 1.3 0 0124 1.4v20.2A1.3 1.3 0 0123 23a1.3 1.3 0 01-1.3-1.4V1.4zM30.7 1.4A1.3 1.3 0 0131.9.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17A1.2 1.2 0 0148.4.2a1.2 1.2 0 011.2 1.3v20.3a1.1 1.1 0 01-1.1 1.1h-.2A1.7 1.7 0 0147 22L33.1 4.2v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V1.4zM56 1.4A1.3 1.3 0 0157.1 0a1.3 1.3 0 011.3 1.4v12.3L71.2.6c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-1.3 1.2 1.2 1.2 0 01-1-.6L63.3 12l-4.8 4.8v4.9a1.3 1.3 0 01-1.3 1.3 1.3 1.3 0 01-1.3-1.3V1.4z"/></svg>
+          <svg class="logo__icon logo__icon--mobile" width="74" height="23">
+            <use  href="img/sprite.svg#pink-logo"></use>
+          </svg>
+          <svg class="logo__icon logo__icon--tablet" width="145" height="40">
+            <use href="img/sprite.svg#pink-logo-tablet"></use>
+          </svg>
+          <svg class="logo__icon logo__icon--desktop" width="147" height="40">
+            <use href="img/sprite.svg#pink-logo-desktop"></use>
+          </svg>
           <span class="visually-hidden">Логотип приложения PINK.</span>
         </a>
       </div>
@@ -45,12 +53,12 @@
   </header>
   <main class="site-catalog">
     <h1 class="visually-hidden">Каталог сайта PINK.</h1>
-    <section class="photo-gallery">
-      <h2 class="photo-gallery__title title-second">Фотографии <br>
+    <section class="site-catalog__photo-gallery">
+      <h2 class="site-catalog__title title-second">Фотографии <br>
         пользователей</h2>
-      <p class="photo-gallery__sub-title">Взгляните на фотографии, которые выкладывают пользователи! <br class="photo-gallery__br-sub-title">
+      <p class="site-catalog__sub-title">Взгляните на фотографии, которые выкладывают пользователи! <br class="site-catalog__br-sub-title">
         Видите, как не хватает ваших?</p>
-      <ul class="photo-gallery__list cards-list">
+      <ul class="site-catalog__list cards-list">
         <li class="cards-list__item cards-list__item--panorama">
           <picture>
             <source media="(min-width: 1080px)" srcset="./img/catalog-img/panorama-desktop.jpg 1x, ./img/catalog-img/panorama-desktop@2x.jpg 2x">
@@ -64,8 +72,9 @@
             комментарии свой совет и <br class="cards-list__br-comment">
             смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
-          <button class="cards-list__favorites cards-list__favorites--active cards-list__favorites--panorama" type="button">Нравится: <input
-              class="cards-list__value-favorites cards-list__value-favorites--panorama" type="number" value="215"></button>
+          <button class="cards-list__favorites cards-list__favorites--panorama" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites cards-list__value-favorites--panorama" disabled type="number" value="215">
+            </button>
         </li>
         <li class="cards-list__item">
           <picture>
@@ -77,8 +86,9 @@
             <span class="cards-list__comment-time">(5 часов назад)</span>
           </h3>
           <p class="cards-list__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <button class="cards-list__favorites" type="button">Нравится: <input class="cards-list__value-favorites"
-              type="number" value="356"></button>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="356">
+            </button>
         </li>
         <li class="cards-list__item">
           <picture>
@@ -90,8 +100,9 @@
             <span class="cards-list__comment-time">(12 часов назад)</span>
           </h3>
           <p class="cards-list__comment">Соседи будут рады!</p>
-          <button class="cards-list__favorites" type="button">Нравится: <input class="cards-list__value-favorites"
-              type="number" value="666"></button>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="666">
+            </button>
         </li>
         <li class="cards-list__item">
           <picture>
@@ -103,8 +114,9 @@
             <span class="cards-list__comment-time">(12 часов назад)</span>
           </h3>
           <p class="cards-list__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <button class="cards-list__favorites" type="button">Нравится: <input class="cards-list__value-favorites"
-              type="number" value="215"></button>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="215">
+            </button>
         </li>
         <li class="cards-list__item">
           <picture>
@@ -116,8 +128,9 @@
             <span class="cards-list__comment-time">(25 часов назад)</span>
           </h3>
           <p class="cards-list__comment">Самая кубанская в мире!</p>
-          <button class="cards-list__favorites" type="button">Нравится: <input class="cards-list__value-favorites"
-              type="number" value="4"></button>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="4">
+            </button>
         </li>
         <li class="cards-list__item">
           <picture>
@@ -129,8 +142,9 @@
             <span class="cards-list__comment-time">(40 часов назад)</span>
           </h3>
           <p class="cards-list__comment">Где снег-то?</p>
-          <button class="cards-list__favorites" type="button">Нравится: <input class="cards-list__value-favorites"
-              type="number" value="150"></button>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="150">
+            </button>
         </li>
         <li class="cards-list__item">
           <picture>
@@ -142,83 +156,115 @@
             <span class="cards-list__comment-time">(45 часов назад)</span>
           </h3>
           <p class="cards-list__comment">Всем GM и взаимные лайки!</p>
-          <button class="cards-list__favorites" type="button">Нравится: <input class="cards-list__value-favorites"
-              type="number" value="2560"></button>
+          <button class="cards-list__favorites" disabled type="button">Нравится:
+            <input class="cards-list__value-favorites" disabled type="number" value="2560">
+            </button>
         </li>
       </ul>
     </section>
-    <section class="photo-editor">
+    <section class="site-catalog__photo-editor photo-editor">
       <h2 class="visually-hidden">Редактор фотографий</h2>
-      <form class="photo-editor__form editor" action="https://echo.htmlacademy.ru/" method="post"
+      <span class="photo-editor__subtitle">Затмите их всех!</br>
+        Выкладывайте все, что накопилось в <br class="photo-editor__br-title">телефоне!</span>
+      <form class="photo-editor__form" action="https://echo.htmlacademy.ru/" method="post"
         enctype="multipart/form-data">
-        <h3 class="editor__title">Затмите их всех!</br>
-          Выкладывайте все, что накопилось в <br class="editor__br-title">телефоне!</h3>
         <picture>
           <source media="(min-width: 660px)" srcset="./img/catalog-img/photo-editor-tablet.jpg 1x, ./img/catalog-img/photo-editor-tablet@2x.jpg 2x">
-          <img class="editor__image" src="./img/catalog-img/photo-editor-mobile.jpg" alt="зимний пейзаж - дорога проходящая через лес на рассвете" srcset="./img/catalog-img/photo-editor-mobile@2x.jpg 2x">
+          <img class="photo-editor__image" src="./img/catalog-img/photo-editor-mobile.jpg" alt="зимний пейзаж - дорога проходящая через лес на рассвете" srcset="./img/catalog-img/photo-editor-mobile@2x.jpg 2x">
         </picture>
-        <ul class="editor__list">
-          <li class="editor__item">
-            <button class="editor__button editor__button--crop editor__button--active" type="button"><span
-                class="visually-hidden">Сделать кроп фотографии.</span></button>
-            <div class="editor__range range">
+        <ul class="photo-editor__list">
+          <li class="photo-editor__item">
+            <button class="photo-editor__button photo-editor__button--active" type="button">
+              <svg class="photo-editor__button-icon photo-editor__button-icon--crop" width="44" height="44">
+                <use href="img/sprite.svg#photo-editor-crop"></use>
+              </svg>
+              <span
+                class="visually-hidden">Сделать кроп фотографии.</span>
+              </button>
+            <div class="photo-editor__range range">
               <button class="range__toggle range__toggle--crop" type="button" style="left: 160px;"></button>
             </div>
           </li>
-          <li class="editor__item">
-            <button class="editor__button editor__button--fill " type="button"><span class="visually-hidden">Сделать
-                заливку фотографии.</span></button>
-            <div class="editor__range range">
+          <li class="photo-editor__item">
+            <button class="photo-editor__button" type="button">
+              <svg class="photo-editor__button-icon photo-editor__button-icon--fill" width="48" height="43">
+                <use href="img/sprite.svg#photo-editor-fill"></use>
+              </svg>
+              <span class="visually-hidden">
+                Сделать
+                заливку фотографии.
+              </span>
+              </button>
+            <div class="photo-editor__range range">
               <button class="range__toggle range__toggle--fill" type="button" style="left: 25px;"></button>
             </div>
           </li>
-          <li class="editor__item">
-            <button class="editor__button editor__button--contrast" type="button"><span class="visually-hidden">Поменять
-                контрастность фотографии.</span></button>
-            <div class="editor__range range ">
+          <li class="photo-editor__item photo-editor__item--last-child">
+            <button class="photo-editor__button" type="button">
+              <svg class="photo-editor__button-icon photo-editor__button-icon--contrast" width="32" height="32">
+                <use href="img/sprite.svg#photo-editor-contrast"></use>
+              </svg>
+              <span class="visually-hidden">Поменять
+                контрастность фотографии.
+              </span>
+              </button>
+            <div class="photo-editor__range range">
               <button class="range__toggle range__toggle--contrast" type="button" style="left: 96px;"></button>
             </div>
           </li>
         </ul>
-        <div class="editor__wrapper-range">
-          <div class="editor__range range range--hidden">
+        <div class="photo-editor__wrapper-range">
+          <div class="photo-editor__range range range--hidden">
             <button class="range__toggle" type="button" style="left: 193px;"></button>
           </div>
         </div>
-        <div class="editor__wrapper-button-form">
-          <button class="editor__button-form editor__button-form--first button button--second" type="submit">Запостить</button>
-          <button class="editor__button-form editor__button-form--last button button--third" type="reset">Отмена</button>
+        <div class="photo-editor__wrapper-button-form">
+          <button class="photo-editor__button-form photo-editor__button-form--first button button--second" type="submit">Запостить</button>
+          <button class="photo-editor__button-form photo-editor__button-form--last button button--third" type="reset">Отмена</button>
         </div>
       </form>
     </section>
   </main>
   <footer class="site-footer">
-    <div class="site-footer__wrapper">
-      <section class="site-footer__logo logo logo--glasses">
-        <h2 class="visually-hidden">Логотип приложения PINK.</h2>
-        <a class="logo__link" href="#">
-
-        </a>
-      </section>
-      <section class="social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="social__list social-items">
-          <li class="social-items__item">
-            <a class="social-item__link" href=""><span class="visually-hidden">VK.</span></a>
-          </li>
-          <li class="social-items__item">
-            <a class="social-item__link" href=""><span class="visually-hidden">Twitter.</span></a>
-          </li>
-          <li class="social-items__item">
-            <a class="social-item__link" href=""><span class="visually-hidden">YouTube.</span></a>
-          </li>
-        </ul>
-      </section>
-      <section class="logo-developer">
-        <h2 class="visually-hidden">Логотип компании-разработчка</h2>
-        <a class="logo-developer__link" href=""> <span class="logo-developer__sign">Разработано</span></a>
-      </section>
-    </div>
+    <section class="site-footer__logo logo">
+      <h2 class="visually-hidden">Логотип приложения PINK.</h2>
+      <a class="logo__link logo__link--footer" href="index.html">
+        <svg class="logo__icon logo__icon--mobile-tablet" width="145" height="40">
+          <use href="img/sprite.svg#pink-logo-footer"></use>
+        </svg>
+        <svg class="logo__icon logo__icon--desktop" width="147" height="40">
+          <use href="img/sprite.svg#pink-logo-footer-desktop"></use>
+        </svg>
+      </a>
+    </section>
+    <section class="site-footer__social social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
+            <img src="img/index-img/svg/vk.svg" alt="VK.">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="tg://resolve?domain=htmlacademy" target="_blank">
+            <img src="img/index-img/svg/telegram.svg" alt="telegram.">
+          </a>
+        </li>
+        <li class="social__item social__item--nth-last-child">
+          <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS" target="_blank">
+            <img src="img/index-img/svg/youtube.svg" alt="YouTube.">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="site-footer__logo-developer logo-developer">
+      <h2 class="visually-hidden">Логотип компании-разработчка - HTML Academy</h2>
+      <a class="logo-developer__link" href="https://htmlacademy.ru/" target="_blank">Разработано
+        <svg class="logo-developer__icon" width="27" height="34">
+          <use href="img/sprite.svg#logo-html-academy"></use>
+        </svg>
+      </a>
+    </section>
   </footer>
   <script src="./js/script.js"></script>
 </body>
