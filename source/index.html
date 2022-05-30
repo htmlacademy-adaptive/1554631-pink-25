@@ -7,7 +7,7 @@
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -55,16 +55,22 @@
     <section class="site-index__intro intro">
       <h2 class="intro__title title-second">Взгляните на жизнь</br>
         иначе!</h2>
-      <button class="intro__button button" type="button">Скачать приложение</button>
+      <a class="intro__button button" href="https://www.apple.com/ru/app-store/" target="_blank" type="button">Скачать приложение</a>
       <ul class="intro__list list-os">
         <li class="list-os__item  list-os__item--apple">
-          <img class="list-os__icon" src="img/index-img/svg/apple-ico.svg" alt="Иконка ОС apple." width="47" height="56">
+          <a class="list-os__link" href="https://www.apple.com/ru/app-store/" target="_blank">
+            <img class="list-os__icon" src="img/index-img/svg/apple-ico.svg" alt="Скачать для apple." width="47" height="56">
+          </a>
         </li>
         <li class="list-os__item list-os__item--android">
-          <img class="list-os__icon" src="img/index-img/svg/android-ico.svg" alt="Иконка ОС android." width="43" height="47">
+          <a class="list-os__link" href="https://play.google.com/store/apps?hl=ru&gl=US" target="_blank">
+            <img class="list-os__icon" src="img/index-img/svg/android-ico.svg" alt="Скачать для android." width="43" height="47">
+          </a>
         </li>
         <li class="list-os__item list-os__item--windows">
-          <img class="list-os__icon" src="img/index-img/svg/microsoft-ico.svg" alt="Иконка ОС windows." width="44" height="42">
+          <a class="list-os__link" href="https://www.microsoft.com/ru-ru/store/apps/" target="_blank">
+            <img class="list-os__icon" src="img/index-img/svg/microsoft-ico.svg" alt="Скачать для windows." width="44" height="42">
+          </a>
         </li>
       </ul>
       <p class="intro__sign">Доступно для iPhone, iPad, Android,</br> Windows Phone, OS X, Windows 8</p>

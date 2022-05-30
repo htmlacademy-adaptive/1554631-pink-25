@@ -40,12 +40,35 @@
   }
 }
 
+.cards-list__link {
+  margin-bottom: 18px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.8;
+    box-shadow: 0 0 20px 1px #283645;
+  }
+
+  &--panorama {
+    &:focus-visible {
+      box-shadow: none;
+    }
+  }
+}
+
 .cards-list__image {
   height: 180px;
   align-self: center;
   display: block;
   width: 100%;
-  margin-bottom: 18px;
   padding: 0;
   object-fit: contain;
 
@@ -161,10 +184,13 @@
     }
   }
 
+  .cards-list__link {
+    margin-bottom: 23px;
+  }
+
   .cards-list__image {
     width: 300px;
     height: 300px;
-    margin-bottom: 23px;
 
     &--panorama {
       max-width: none;
@@ -245,10 +271,13 @@
     }
   }
 
+  .cards-list__link {
+    margin-bottom: 24px;
+  }
+
   .cards-list__image {
     height: 400px;
     width: 300px;
-    margin-bottom: 24px;
 
     &--panorama {
       width: 1200px;
