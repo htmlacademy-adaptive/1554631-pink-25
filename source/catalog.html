@@ -7,7 +7,7 @@
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="./catalog.html">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog PINK</title>
@@ -60,11 +60,16 @@
         Видите, как не хватает ваших?</p>
       <ul class="site-catalog__list cards-list">
         <li class="cards-list__item cards-list__item--panorama">
-          <picture>
-            <source media="(min-width: 1080px)" srcset="./img/catalog-img/panorama-desktop.jpg 1x, ./img/catalog-img/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/panorama-tablet.jpg 1x, ./img/catalog-img/panorama-tablet@2x.jpg 2x">
-            <img class="cards-list__image cards-list__image--panorama" src="./img/catalog-img/panorama-mobile.jpg" alt="" srcset="./img/catalog-img/panorama-mobile@2x.jpg 2x">
-          </picture>
+          <a class="cards-list__link cards-list__link--panorama" href="#" target="_blank">
+            <picture>
+              <source media="(min-width: 1080px)" type="image/webp" srcset="./img/catalog-img/panorama-desktop.webp 1x, ./img/catalog-img/panorama-desktop@2x.webp 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" type="image/webp" srcset="./img/catalog-img/panorama-tablet.webp 1x, ./img/catalog-img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/catalog-img/panorama-mobile.webp 1x, ./img/catalog-img/panorama-mobile@2x.webp 2x">
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/panorama-desktop.jpg 1x, ./img/catalog-img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/panorama-tablet.jpg 1x, ./img/catalog-img/panorama-tablet@2x.jpg 2x">
+              <img class="cards-list__image cards-list__image--panorama" src="./img/catalog-img/panorama-mobile.jpg" alt="" srcset="./img/catalog-img/panorama-mobile@2x.jpg 2x">
+            </picture>
+          </a>
           <h3 class="cards-list__title">Анна
             <span class="cards-list__comment-time">(5 минут назад)</span>
           </h3>
@@ -77,11 +82,16 @@
             </button>
         </li>
         <li class="cards-list__item">
-          <picture>
-            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-1-desktop.jpg 1x, ./img/catalog-img/photo-1-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-1-tablet.jpg 1x, ./img/catalog-img/photo-1-tablet@2x.jpg 2x">
-            <img class="cards-list__image" src="./img/catalog-img/photo-1-mobile.jpg" alt="камера снимающая белую иномарку." srcset="./img/catalog-img/photo-1-mobile@2x.jpg 2x">
-          </picture>
+          <a class="cards-list__link" href="#" target="_blank">
+            <picture>
+              <source media="(min-width: 1080px)" type="image/webp" srcset="./img/catalog-img/photo-1-desktop.webp 1x, ./img/catalog-img/photo-1-desktop@2x.webp 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" type="image/webp" srcset="./img/catalog-img/photo-1-tablet.webp 1x, ./img/catalog-img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/catalog-img/photo-1-mobile.webp 1x, ./img/catalog-img/photo-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-1-desktop.jpg 1x, ./img/catalog-img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-1-tablet.jpg 1x, ./img/catalog-img/photo-1-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-1-mobile.jpg" alt="камера снимающая белую иномарку." srcset="./img/catalog-img/photo-1-mobile@2x.jpg 2x">
+            </picture>
+          </a>
           <h3 class="cards-list__title">Левон
             <span class="cards-list__comment-time">(5 часов назад)</span>
           </h3>
@@ -91,11 +101,13 @@
             </button>
         </li>
         <li class="cards-list__item">
-          <picture>
-            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-2-desktop.jpg 1x, ./img/catalog-img/photo-2-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-2-tablet.jpg 1x, ./img/catalog-img/photo-2-tablet@2x.jpg 2x">
-            <img class="cards-list__image" src="./img/catalog-img/photo-2-mobile.jpg" alt="барабаны." srcset="./img/catalog-img/photo-2-mobile@2x.jpg 2x">
-          </picture>
+          <a class="cards-list__link" href="#" target="_blank">
+            <picture>
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-2-desktop.jpg 1x, ./img/catalog-img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-2-tablet.jpg 1x, ./img/catalog-img/photo-2-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-2-mobile.jpg" alt="барабаны." srcset="./img/catalog-img/photo-2-mobile@2x.jpg 2x">
+            </picture>
+          </a>
           <h3 class="cards-list__title">Антон
             <span class="cards-list__comment-time">(12 часов назад)</span>
           </h3>
@@ -105,11 +117,13 @@
             </button>
         </li>
         <li class="cards-list__item">
-          <picture>
-            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-3-desktop.jpg 1x, ./img/catalog-img/photo-3-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-3-tablet.jpg 1x, ./img/catalog-img/photo-3-tablet@2x.jpg 2x">
-            <img class="cards-list__image" src="./img/catalog-img/photo-3-mobile.jpg" alt="стеклянный небоскрёб" srcset="./img/catalog-img/photo-3-mobile@2x.jpg 2x">
-          </picture>
+          <a class="cards-list__link" href="#" target="_blank">
+            <picture>
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-3-desktop.jpg 1x, ./img/catalog-img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-3-tablet.jpg 1x, ./img/catalog-img/photo-3-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-3-mobile.jpg" alt="стеклянный небоскрёб" srcset="./img/catalog-img/photo-3-mobile@2x.jpg 2x">
+            </picture>
+          </a>
           <h3 class="cards-list__title">Борис
             <span class="cards-list__comment-time">(12 часов назад)</span>
           </h3>
@@ -119,11 +133,13 @@
             </button>
         </li>
         <li class="cards-list__item">
-          <picture>
-            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-4-desktop.jpg 1x, ./img/catalog-img/photo-4-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-4-tablet.jpg 1x, ./img/catalog-img/photo-4-tablet@2x.jpg 2x">
-            <img class="cards-list__image" src="./img/catalog-img/photo-4-mobile.jpg" alt="кубанская бахча" srcset="./img/catalog-img/photo-4-mobile@2x.jpg 2x">
-          </picture>
+          <a class="cards-list__link" href="#" target="_blank">
+            <picture>
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-4-desktop.jpg 1x, ./img/catalog-img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-4-tablet.jpg 1x, ./img/catalog-img/photo-4-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-4-mobile.jpg" alt="кубанская бахча" srcset="./img/catalog-img/photo-4-mobile@2x.jpg 2x">
+            </picture>
+          </a>
           <h3 class="cards-list__title">Сергей
             <span class="cards-list__comment-time">(25 часов назад)</span>
           </h3>
@@ -133,11 +149,13 @@
             </button>
         </li>
         <li class="cards-list__item">
-          <picture>
-            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-5-desktop.jpg 1x, ./img/catalog-img/photo-5-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-5-tablet.jpg 1x, ./img/catalog-img/photo-5-tablet@2x.jpg 2x">
-            <img class="cards-list__image" src="./img/catalog-img/photo-5-mobile.jpg" alt="фото с вершины горы" srcset="./img/catalog-img/photo-5-mobile@2x.jpg 2x">
-          </picture>
+          <a class="cards-list__link" href="#" target="_blank">
+            <picture>
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-5-desktop.jpg 1x, ./img/catalog-img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-5-tablet.jpg 1x, ./img/catalog-img/photo-5-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-5-mobile.jpg" alt="фото с вершины горы" srcset="./img/catalog-img/photo-5-mobile@2x.jpg 2x">
+            </picture>
+          </a>
           <h3 class="cards-list__title">Максим
             <span class="cards-list__comment-time">(40 часов назад)</span>
           </h3>
@@ -147,11 +165,13 @@
             </button>
         </li>
         <li class="cards-list__item">
-          <picture>
-            <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-6-desktop.jpg 1x, ./img/catalog-img/photo-6-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-6-tablet.jpg 1x, ./img/catalog-img/photo-6-tablet@2x.jpg 2x">
-            <img class="cards-list__image" src="./img/catalog-img/photo-6-mobile.jpg" alt="крыло самолета на закате" srcset="./img/catalog-img/photo-6-mobile@2x.jpg 2x">
-          </picture>
+          <a class="cards-list__link" href="#" target="_blank">
+            <picture>
+              <source media="(min-width: 1080px)" srcset="./img/catalog-img/photo-6-desktop.jpg 1x, ./img/catalog-img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px) and (max-width: 1079px)" srcset="./img/catalog-img/photo-6-tablet.jpg 1x, ./img/catalog-img/photo-6-tablet@2x.jpg 2x">
+              <img class="cards-list__image" src="./img/catalog-img/photo-6-mobile.jpg" alt="крыло самолета на закате" srcset="./img/catalog-img/photo-6-mobile@2x.jpg 2x">
+            </picture>
+          </a>
           <h3 class="cards-list__title">Надежда
             <span class="cards-list__comment-time">(45 часов назад)</span>
           </h3>
